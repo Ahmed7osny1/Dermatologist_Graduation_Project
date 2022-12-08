@@ -289,31 +289,6 @@
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/Birthdate"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Birth Date"
-                    android:layout_marginEnd="25dp"
-                    android:layout_marginStart="25dp"
-                    android:layout_marginTop="5dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    tools:ignore="MissingConstraints"
-                    app:boxStrokeColor="#ac8579"
-                    app:helperTextTextColor="#b8958a"
-                    android:textColorHint="#b8958a"
-                    app:hintTextColor="#8c4a15">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/et_birthdate"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:inputType="number" />
-                </com.google.android.material.textfield.TextInputLayout>
-
-                <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/Address"
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="match_parent"
@@ -342,54 +317,6 @@
                         android:inputType="text"/>
                 </com.google.android.material.textfield.TextInputLayout>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginEnd="25dp"
-                    android:layout_marginStart="25dp"
-                    android:layout_marginTop="10dp">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="start"
-                        android:textColorHint="#b8958a"
-                        android:text="Gender"
-                        android:textColor="#725A52"
-                        android:textSize="27sp"
-                        android:textStyle="bold" />
-
-                    <RadioGroup
-                        android:id="@+id/radioGroup"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="-3dp"
-                        android:checkedButton="@+id/radio_button_1"
-                        android:backgroundTint="#725A52"
-                        android:orientation="horizontal"
-                        android:layout_marginStart="15dp">
-
-                        <RadioButton
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Male"
-                            android:textSize="15dp"
-                            android:textStyle="bold"
-                            android:textColor="#624E47"/>
-
-                        <RadioButton
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="20dp"
-                            android:text="Female"
-                            android:textSize="15dp"
-                            android:textStyle="bold"
-                            android:textColor="#624E47"/>
-
-                    </RadioGroup>
-                </LinearLayout>
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/signupIn"
