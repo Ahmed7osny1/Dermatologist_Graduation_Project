@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#fbf2f0"
-    tools:context=".model">
+    tools:context=".ui.appscreen.Model">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardview"
@@ -120,20 +120,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/treatment" />
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="450dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:baselineAlignBottom="true"
-        android:src="@drawable/up"
-        android:scaleType="centerCrop"
-        android:layout_marginTop="-80dp"
-        android:foregroundGravity="top"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
+
 
     <ImageView
         android:layout_width="match_parent"

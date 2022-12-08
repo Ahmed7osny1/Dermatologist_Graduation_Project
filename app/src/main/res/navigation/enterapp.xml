@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/splashFragment"
-        android:name="com.autismagraduation.dermatologist.SplashFragment"
+        android:name="com.autismagraduation.dermatologist.ui.enterapp.SplashFragment"
         android:label="fragment_splash"
         tools:layout="@layout/fragment_splash" >
         <action
@@ -22,15 +22,18 @@
         <action
             android:id="@+id/action_login_to_register"
             app:destination="@id/register" />
+        <action
+            android:id="@+id/action_login_to_enterActivity"
+            app:destination="@id/enterActivity" />
     </fragment>
     <fragment
         android:id="@+id/register"
-        android:name="com.autismagraduation.dermatologist.Register"
+        android:name="com.autismagraduation.dermatologist.ui.enterapp.Register"
         android:label="fragment_register"
         tools:layout="@layout/fragment_register" />
-    <fragment
-        android:id="@+id/homeFragment2"
-        android:name="com.autismagraduation.dermatologist.HomeFragment"
-        android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+    <activity
+        android:id="@+id/enterActivity"
+        android:name="com.autismagraduation.dermatologist.EnterActivity"
+        android:label="activity_enter"
+        tools:layout="@layout/activity_enter" />
 </navigation>

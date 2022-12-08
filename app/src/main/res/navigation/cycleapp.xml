@@ -7,7 +7,16 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.autismagraduation.dermatologist.HomeFragment"
+        android:name="com.autismagraduation.dermatologist.ui.appscreen.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_model"
+            app:destination="@id/model" />
+    </fragment>
+    <fragment
+        android:id="@+id/model"
+        android:name="com.autismagraduation.dermatologist.ui.appscreen.Model"
+        android:label="fragment_model"
+        tools:layout="@layout/fragment_model" />
 </navigation>
