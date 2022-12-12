@@ -121,22 +121,6 @@
                 android:orientation="vertical"
                 android:padding="5dp">
 
-                <TextView
-                    android:id="@+id/textView3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
-                    android:padding="5dp"
-                    android:layout_marginTop="3dp"
-                    android:text="Login"
-                    android:layout_gravity="start"
-                    android:textColor="#897562"
-                    android:textSize="45dp"
-                    android:textStyle="bold|italic"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/email"
@@ -176,7 +160,7 @@
                     app:counterEnabled="true"
                     app:endIconTint="#897562"
                     app:endIconMode="password_toggle"
-                    app:startIconDrawable="@drawable/ic_baseline_lock_24"
+                    app:startIconDrawable="@drawable/ic_lock"
                     app:startIconTint="#897562"
                     android:layout_marginEnd="25dp"
                     android:layout_marginStart="25dp"

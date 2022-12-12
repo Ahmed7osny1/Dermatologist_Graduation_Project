@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="205dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="7dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginEnd="7dp"
+    app:cardElevation="10dp"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/medicine_favorite"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:padding="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_favorite"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/medicine_img"
+            android:layout_width="150dp"
+            android:layout_height="110dp"
+            android:padding="15dp"
+            android:layout_marginStart="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pngegg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/medicine_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medicine Name"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/medicine_img" />
+
+
+        <TextView
+            android:id="@+id/medicine_discription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medicine Discription"
+            android:layout_margin="5dp"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/medicine_name" />
+
+        <TextView
+            android:id="@+id/EGP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="EGP"
+            android:textColor="@color/first_color"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/medicine_discription" />
+
+
+        <TextView
+            android:id="@+id/medicine_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Price"
+            android:textColor="@color/first_color"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/EGP"
+            app:layout_constraintTop_toBottomOf="@+id/medicine_discription" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/medicine_cart_btn"
+            android:layout_width="130dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/background_btn"
+            android:drawableStart="@drawable/ic_addcart"
+            android:padding="10dp"
+            android:text="ADD TO CART"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/medicine_price" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

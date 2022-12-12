@@ -13,10 +13,55 @@
         <action
             android:id="@+id/action_homeFragment_to_model"
             app:destination="@id/model" />
+        <action
+            android:id="@+id/action_homeFragment_to_medicineFragment"
+            app:destination="@id/medicineFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_offerFragment"
+            app:destination="@id/offerFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_herbsFragment"
+            app:destination="@id/herbsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_skinTypeFragment"
+            app:destination="@id/skinTypeFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_skintypeFragment"
+            app:destination="@id/skinTypeFragment" />
     </fragment>
     <fragment
         android:id="@+id/model"
         android:name="com.autismagraduation.dermatologist.ui.appscreen.Model"
         android:label="fragment_model"
         tools:layout="@layout/fragment_model" />
+    <fragment
+        android:id="@+id/medicineFragment"
+        android:name="com.autismagraduation.dermatologist.ui.appscreen.MedicineFragment"
+        android:label="fragment_medicine"
+        tools:layout="@layout/fragment_medicine" />
+    <fragment
+        android:id="@+id/offerFragment"
+        android:name="com.autismagraduation.dermatologist.ui.appscreen.OfferFragment"
+        android:label="fragment_offer"
+        tools:layout="@layout/fragment_offer" />
+    <fragment
+        android:id="@+id/herbsFragment"
+        android:name="com.autismagraduation.dermatologist.ui.appscreen.HerbsFragment"
+        android:label="fragment_herbs"
+        tools:layout="@layout/fragment_herbs" />
+    <fragment
+        android:id="@+id/skincareFragment"
+        android:name="com.autismagraduation.dermatologist.ui.appscreen.SkincareFragment"
+        android:label="fragment_skincare"
+        tools:layout="@layout/fragment_skincare" />
+    <fragment
+        android:id="@+id/skinTypeFragment"
+        android:name="com.autismagraduation.dermatologist.ui.appscreen.SkinTypeFragment"
+        android:label="fragment_skintype"
+        tools:layout="@layout/fragment_skintype" >
+        <action
+            android:id="@+id/action_skinTypeFragment_to_skincareFragment"
+            app:destination="@id/skincareFragment" />
+    </fragment>
+
 </navigation>
