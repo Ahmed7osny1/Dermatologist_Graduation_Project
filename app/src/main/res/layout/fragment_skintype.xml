@@ -31,7 +31,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="end"
             android:scaleType="centerCrop"
-            android:src="@drawable/skindiagnosis"
+            android:src="@drawable/normal"
             tools:ignore="ImageContrastCheck" />
 
         <TextView
@@ -64,7 +64,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
                 android:scaleType="centerCrop"
-                android:src="@drawable/skindiagnosis"
+                android:src="@drawable/sensitive"
                 tools:ignore="ImageContrastCheck" />
 
             <TextView
@@ -97,7 +97,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
                 android:scaleType="centerCrop"
-                android:src="@drawable/skindiagnosis"
+                android:src="@drawable/sensitive"
                 tools:ignore="ImageContrastCheck" />
 
             <TextView
@@ -131,7 +131,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
                 android:scaleType="centerCrop"
-                android:src="@drawable/skindiagnosis"
+                android:src="@drawable/dry"
                 tools:ignore="ImageContrastCheck" />
 
             <TextView
@@ -165,7 +165,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
                 android:scaleType="centerCrop"
-                android:src="@drawable/skindiagnosis"
+                android:src="@drawable/sensitive"
                 tools:ignore="ImageContrastCheck" />
 
             <TextView
