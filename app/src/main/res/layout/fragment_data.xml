@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.appscreen.SkincareFragment">
+    tools:context=".ui.appscreen.DataFragment">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/skincare_recycleView"
+        android:id="@+id/dataRecycleView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"

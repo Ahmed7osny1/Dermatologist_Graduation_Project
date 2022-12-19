@@ -48,12 +48,20 @@
         android:id="@+id/herbsFragment"
         android:name="com.autismagraduation.dermatologist.ui.appscreen.HerbsFragment"
         android:label="fragment_herbs"
-        tools:layout="@layout/fragment_herbs" />
+        tools:layout="@layout/fragment_herbs" >
+        <action
+            android:id="@+id/action_herbsFragment_to_dataUsedFragment"
+            app:destination="@id/dataUsedFragment" />
+    </fragment>
     <fragment
-        android:id="@+id/skincareFragment"
-        android:name="com.autismagraduation.dermatologist.ui.appscreen.SkincareFragment"
-        android:label="fragment_skincare"
-        tools:layout="@layout/fragment_skincare" />
+        android:id="@+id/DataFragment"
+        android:name="com.autismagraduation.dermatologist.ui.appscreen.DataFragment"
+        android:label="fragment_data"
+        tools:layout="@layout/fragment_data" >
+        <action
+            android:id="@+id/action_DataFragment_to_dataUsedFragment"
+            app:destination="@id/dataUsedFragment" />
+    </fragment>
     <fragment
         android:id="@+id/skinTypeFragment"
         android:name="com.autismagraduation.dermatologist.ui.appscreen.SkinTypeFragment"
@@ -61,7 +69,16 @@
         tools:layout="@layout/fragment_skintype" >
         <action
             android:id="@+id/action_skinTypeFragment_to_skincareFragment"
-            app:destination="@id/skincareFragment" />
+            app:destination="@id/DataFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dataUsedFragment"
+        android:name="com.autismagraduation.dermatologist.ui.appscreen.DataUsedFragment"
+        android:label="fragment_dataused"
+        tools:layout="@layout/fragment_dataused" >
+        <argument
+            android:name="dataused"
+            app:argType="com.autismagraduation.dermatologist.data.DataUsed" />
     </fragment>
 
 </navigation>

@@ -11,12 +11,13 @@ import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.autismagraduation.dermatologist.R
 import com.autismagraduation.dermatologist.adapter.DataAdapter
 import com.autismagraduation.dermatologist.data.DataUsed
-import com.autismagraduation.dermatologist.databinding.FragmentHerbsBinding
+import com.autismagraduation.dermatologist.databinding.FragmentDataBinding
 
-class HerbsFragment : Fragment() {
+
+class DataFragment : Fragment() {
 
     private lateinit var myArray: ArrayList<DataUsed>
-    private lateinit var binding: FragmentHerbsBinding
+    private lateinit var binding: FragmentDataBinding
 
 
     override fun onCreateView(
@@ -24,7 +25,7 @@ class HerbsFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         // Inflate the layout for this fragment
-        binding = FragmentHerbsBinding.inflate(inflater, container, false)
+        binding = FragmentDataBinding.inflate(inflater, container, false)
 
         return binding.root
     }
@@ -33,7 +34,7 @@ class HerbsFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
 
-        binding.herbsRecycleView.layoutManager = StaggeredGridLayoutManager(2,
+        binding.dataRecycleView.layoutManager = StaggeredGridLayoutManager(2,
             LinearLayoutManager.VERTICAL)
 
         getData()
@@ -44,32 +45,29 @@ class HerbsFragment : Fragment() {
 
         myArray = arrayListOf<DataUsed>()
 
+        // normal
+
         myArray.add(
             DataUsed(
                 R.drawable.pngegg,
-                "Mayade",
-                "senior",
-                "jhhhhh"
+                "skincare",
+                "semi senior",
+                "mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm"
             )
         )
 
-        myArray.add(
-            DataUsed(
-                R.drawable.kiss,
-                "Mayade",
-                "senior",
-                "jjjjjjjjj"
-            )
-        )
+
+
+
 
 
         val adapter = DataAdapter(myArray)
-        binding.herbsRecycleView.adapter = adapter
+        binding.dataRecycleView.adapter = adapter
 
         adapter.setonItemClickListener(object: DataAdapter.onItemClickListener {
 
             override fun dataAction(position: Int) {
-                val action = HerbsFragmentDirections.actionHerbsFragmentToDataUsedFragment(
+                val action = DataFragmentDirections.actionDataFragmentToDataUsedFragment(
                     myArray[position]
                 )
                 Navigation.findNavController(requireView()).navigate(action)
