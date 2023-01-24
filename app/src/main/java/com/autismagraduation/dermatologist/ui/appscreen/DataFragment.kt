@@ -65,6 +65,44 @@ class DataFragment : Fragment() {
         //all skin type
         myArray.add(
             DataUsed(
+                R.drawable.maskara,
+                "Ecrinal",
+                "Eyelash strengthener",
+                "\nThick eyebrows and long eyelashes are among the most distinctive signs of beauty for facial features.\n\n" +
+                        "That is why I would like to talk to you about:\n" +
+                        "Ecrinal mascara to intensify eyelashes and eyebrows\n" +
+                        "\n" +
+                        "Ecrinal eyelash strengthener\n\n" +
+                        "Ecrinal mascara is a therapeutic medical mascara that thickens eyelashes and eyebrows, because it contains nutrients for eyelashes and eyebrows that stimulate hair growth and give it shine, vitality and strength.\n\n" +
+                        "What are the active ingredients in it?\n" +
+                        "-------------------------------------------\n\n"+
+                        "ANP + 2 is a stimulating substance for the production of keratin needed to build hair.\n" +
+                        "The Silk Extract rejuvenates the eyelashes and gives them luster and shine.\n" +
+                        "The Volume Expanding Wax to nourish the eyelashes and give them density\n" +
+                        "\n" +
+                        "(used once in the evening).\n\n"
+            )
+        )
+
+        //all skin type
+        myArray.add(
+            DataUsed(
+                R.drawable.dna,
+                "DNA",
+                "RADIANCE EYE CONTOUR",
+                "\n\n\nYour self-confidence will increase because through it the beauty of your eyes will be revealed due to its noticeable effect on the eye with a healthy and attractive appearance and it protects you from dryness of the skin under the eye." +
+                        "\n\n" +
+                        "**********************************************\n\n"+
+                        "Removes dark circles\n\n" +
+                        "Calms under eye bags\n" +
+                        "\n" +
+                        "(Use it in the evening)\n\n"
+            )
+        )
+
+        //all skin type
+        myArray.add(
+            DataUsed(
                 R.drawable.bodyalogen,
                 "Alejon Body lotion ",
                 "Body lotion",
@@ -170,6 +208,25 @@ class DataFragment : Fragment() {
                          "It contains panthenol, zinc oxide and glycerin.\n\n" +
                          "\n"+
                          "His method: - Apply twice a day.\n"
+            )
+        )
+
+        myArray.add(
+            DataUsed(
+                R.drawable.dbe,
+                "ISISPHARMA",
+                "Isis Secalia Aha",
+                "Moisturizing milk for dry skin and goosebumps skin\n" +
+                        "\n" +
+                        "Contains a high concentration of fruit acids for daily exfoliation to remove dead skin layers and helps hair grow naturally without infections\n" +
+                        "\n" +
+                        "Contains glycerin, shea butter and vitamin E to moisturize the skin and restore its natural appearance\n" +
+                        " \n" +
+                        "Combines hydrating and restorative properties to help skin regain its elasticity\n" +
+                        "\n" +
+                        "It is quickly absorbed and does not leave a greasy effect\n" +
+                        "\n" +
+                        "(Used 2 to 3 times a week)"
             )
         )
 
@@ -459,6 +516,26 @@ class DataFragment : Fragment() {
                         "Reduces sebum secretion thanks to sebulyse and anti-shine oily skin\n" +
                         "Light, non-greasy texture suitable for sensitive skin\n\n" +
                         "Keeps skin looking matte thanks to Perlite. Can be used as a make-up fixer.\n\n"
+            )
+        )
+
+        myArray.add(
+            DataUsed(
+                R.drawable.vichy,
+                "VICHY",
+                "Vichy Normaderm Phytosolution Double correction",
+                "A moisturizer for oily, acne-prone skin, rejuvenates the complexion, moisturizes 24 hours a day, regulates sebum secretion, reduces the appearance of pores, and absorbs quickly.\n" +
+                        "\n" +
+                        "You will notice the difference in your skin from the first week; Because it is a moisturizing cream for the dual correction of oily and blemish-prone skin.\n" +
+                        "\n" +
+                        "New advanced formula contains\n" +
+                        "-----------------------------------------\n\n"+
+                        "Salicylic acid for gentle exfoliation.\n" +
+                        "And hyaluronic acid for deep hydration.\n" +
+                        "And mineral water from the Vichy volcano, containing 15 minerals\n" +
+                        "24 hour hydration\n" +
+                        "Light in appearance, easy to absorb, gives the skin shine and radiance, protecting the skin barrier\n" +
+                        "Controlling excess sebum secreted by the skin. Smoothing the skin\n\n"
             )
         )
 
