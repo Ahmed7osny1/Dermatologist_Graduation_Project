@@ -80,6 +80,26 @@ class DataFragment : Fragment() {
         //all skin type
         myArray.add(
             DataUsed(
+                R.drawable.nails,
+                "ECRINAL",
+                "Vitamin Nail Strengthener",
+                "Ecrinal Vitamin Nail Strengthener\n" +
+                        "Treating nails and protecting them from breakage, weakness and slow growth is necessary to maintain their shape and beauty.\n\n" +
+                        "Ecrinal clear liquid nail hardener promotes healthy nail growth.\n\n" +
+                        "Rich in vitamins and zinc, it contains silicone to give nails strength to resist breakage\n" +
+                        "\n" +
+                        "Contains Silk Lipsticks to protect nails from any bacterial or fungal infection.\n\n" +
+                        "Strengthens nails, gives them shine, and protects them from cracking.\n\n" +
+                        "Fast absorption, does not break ablution.\n\n" +
+                        "((Used 3 times a week for 3 months))\n\n" +
+                        "It is recommended to use it with vitamin Biovita, one daily after lunch. It is excellent for nail health and strengthening.\n\n"
+
+            )
+        )
+
+        //all skin type
+        myArray.add(
+            DataUsed(
                 R.drawable.urepar,
                 "UREPAR",
                 "Foot_Cream",
