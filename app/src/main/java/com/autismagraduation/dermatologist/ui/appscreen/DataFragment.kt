@@ -65,6 +65,55 @@ class DataFragment : Fragment() {
         //all skin type
         myArray.add(
             DataUsed(
+                R.drawable.bodyalogen,
+                "Alejon Body lotion ",
+                "Body lotion",
+                "\nAn excellent body lotion with you in the winter to prevent dry skin and make it very moist and soft, and it also moisturizes without the sticky feeling of most lotions.\n" +
+                        " \n" +
+                        "They are excellent because they contain hyaluronic acid, vitamin E, ceramides, and shea butter.\n\n" +
+                        "Great hydration and softness, and also suitable after laser, shaving, and various hair removal methods. Also, our body, in winter, is the time when it most needs hydration.\n\n" +
+                        "They are also suitable for weightless skin conditions ((keratosis of hair))\n\n" +
+                        "They are also large in size and they sit with you for a good time.\n\n"
+            )
+        )
+
+        //all skin type
+        myArray.add(
+            DataUsed(
+                R.drawable.urepar,
+                "UREPAR",
+                "Foot_Cream",
+                "\nIn 14 days, it is very excellent for treating cracked legs and dryness, as it contains 10% urea, which is why its name is Urepar, which comes from Urea; It exfoliates dead skin layers, nourishes and moisturizes skin cells\n" +
+                        "((high hydration because it also contains glycerin and shea butter))\n" +
+                        " and rebuilds the outer layers of the skin...\n\n" +        "It is used twice a day or once when necessary. It is available in pharmacies, and one has one as a gift.\n" +
+                        "\n" +        "Do not use on the face or open wounds.\n\n" +
+                        "I hope you don't walk barefoot.\n\n"
+
+            )
+        )
+
+        //all skin type
+        myArray.add(
+            DataUsed(
+                R.drawable.eye,
+                "Alejon EYE",
+                "Medical concealer",
+                "A medical concealer with a medium shade, you will like it very much, for the eye area for daily use, and at the same time it reduces dark circles.\n\n" +
+                        "Pal peptide complex This is a new technology that contains protein types that stimulate collagen production.\n" +
+                        "There is also collagen to reduce the shape of the emoji lines around the eye.\n" +
+                        "There are also types of proteins that reduce swelling under the eye by reducing water retention under the eye.\n" +
+                        "It also contains caffeine and vitamin K, which in turn dilates the blood capillaries, because in girls, the capillaries remain visible under their eyes, so they remain like blue circles under the eyes.\n" +
+                        "\n" +
+                        "The advantage of the eye contour cream is that it is tinted, so we will not need to put on makeup after that. Its color is suitable for the skin of Egyptians, its texture is not heavy or light, but its coverage is suitable for daily use.\n" +
+                        "It is used morning and evening around the eye with the tips of the fingers by applying it from the inside to the outside\n" +
+                        "I would like to drink good water with him, reduce the vigil and adjust the hours of sleep, put the cream on the palm of the fingertips with plumpness, it is forbidden to rub in the eye or under it\n" +
+                        "\n*Not suitable for pregnant women*\n\n"
+            )
+        )
+
+        //all skin type
+        myArray.add(
+            DataUsed(
                 R.drawable.seram,
                 "INFINITY ANTI_ACING\nDAY SERUM",
                 "Maximum protection Against Environmental Agressions",
@@ -360,7 +409,7 @@ class DataFragment : Fragment() {
         )
 
 
-
+//*****************************************************************************************************************************
 
 //oil skin
 
@@ -373,6 +422,39 @@ class DataFragment : Fragment() {
                          "thus preventing clogged pores from the impurities that accumulate on your skin, which causes problems for your skin, such as pimples and blackheads.\n\n" +
                          "Peace be upon you, if your skin is oily and you used a lotion with acids, zinc, biotin and other effective materials through which you can reach the maximum degree of cleansing the skin and pores.\n\n" +
                          "It will also be antibacterial and inflammatory and regulate fatty secretions.\n\n"
+            )
+        )
+
+        myArray.add(
+            DataUsed(
+                R.drawable.elar,
+                "La Roche Posay Effaclar Mat",
+                "Effaclar Mat",
+                "\n\nThe shine of oily skin is one of the things that can bother you during your day.\n" +
+                        "La Roche Posay Effaclar Mat\n" +
+                        "((Moisturizer + Primer + Pore Minimizer))\n\n" +
+                        "A very light formula on the skin that is oil-free and does not clog pores\n" +
+                        "Moisturizes oily, combination and acne-prone skin\n" +
+                        "Helps reduce the size of large pores\n\n" +
+                        "Reduces sebum secretion thanks to sebulyse and anti-shine oily skin\n" +
+                        "Light, non-greasy texture suitable for sensitive skin\n\n" +
+                        "Keeps skin looking matte thanks to Perlite. Can be used as a make-up fixer.\n\n"
+            )
+        )
+
+        myArray.add(
+            DataUsed(
+                R.drawable.nuxe,
+                "Nuxe",
+                "Oily skin routine",
+                "\nThe toner contains a special and gentle formula on the face that cleanses the skin of the accumulations and impurities that were not removed from the lotion. It also works to renew and clean the cells without removing the natural oils present in the skin. It gives the skin hydration and refreshment without exaggeration in tightening or drying the skin.\n" +
+                        "\n" +
+                        "How to use the toner:-\n" +
+                        "-----------------------\n\n"+
+                        "1- The toner is used on the skin after cleansing the skin with a lotion suitable for the nature of the skin.\n\n" +
+                        "2- A piece of cotton is placed in the toner, then passed over the face, except for the eye area.\n\n" +
+                        "3-Leave on the skin until it dries and does not rinse, then apply a light face cream suitable for oily skin.\n\n" +
+                        "We have toners like Bel Clinic, Sebaclar, or Nuxe."
             )
         )
 
