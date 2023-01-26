@@ -9,10 +9,10 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardview"
-        android:layout_width="202dp"
-        android:layout_height="194dp"
+        android:layout_width="222dp"
+        android:layout_height="210dp"
         android:layout_marginStart="50dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="120dp"
         android:layout_marginEnd="50dp"
         app:cardCornerRadius="150dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,7 +35,7 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="168dp"
+        android:layout_marginTop="178dp"
         android:background="@drawable/ic_baseline_camera_alt_24"
         android:padding="20dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -43,13 +43,31 @@
         app:layout_constraintTop_toTopOf="@+id/cardview"
         tools:ignore="MissingConstraints" />
 
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="50dp"
+        android:gravity="start"
+        android:padding="5dp"
+        android:text="Click on the camera to \n Take ot Upload Image"
+        android:textColor="#733420"
+        android:textSize="21dp"
+        android:textStyle="italic|bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.453"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardview" />
+
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/result"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="60dp"
         android:layout_gravity="center"
         android:layout_marginStart="45dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="170dp"
         android:layout_marginEnd="45dp"
         android:layout_weight="1"
         android:background="@drawable/background_btn"
@@ -65,60 +83,31 @@
         app:layout_constraintTop_toTopOf="@id/button"
         tools:ignore="MissingConstraints" />
 
-    <TextView
-        android:id="@+id/string"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:gravity="center"
-        android:padding="5dp"
-        android:text="Diagnose"
-        android:textColor="#733420"
-        android:textSize="21dp"
-        android:textStyle="normal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/result" />
 
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/treatment"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_gravity="center"
-        android:layout_marginStart="45dp"
-        android:layout_marginTop="120dp"
-        android:layout_marginEnd="45dp"
-        android:layout_weight="1"
-        android:background="@drawable/background_btn"
-        android:padding="5dp"
-        android:text="Suggest Treatment"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-        android:textSize="30sp"
-        android:textStyle="italic"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/result"
-        tools:ignore="MissingConstraints" />
+<!--    <androidx.appcompat.widget.AppCompatButton-->
+<!--        android:id="@+id/treatment"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginStart="45dp"-->
+<!--        android:layout_marginTop="120dp"-->
+<!--        android:layout_marginEnd="45dp"-->
+<!--        android:layout_weight="1"-->
+<!--        android:background="@drawable/background_btn"-->
+<!--        android:padding="5dp"-->
+<!--        android:text="Suggest Treatment"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="30sp"-->
+<!--        android:textStyle="italic"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="@id/result"-->
+<!--        tools:ignore="MissingConstraints" />-->
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:gravity="start"
-        android:layout_marginStart="25dp"
-        android:padding="5dp"
-        android:text="See more..."
-        android:textColor="#733420"
-        android:textSize="21dp"
-        android:textStyle="normal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.212"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/treatment" />
+
 
 
 

@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="#F9E2D7"
+    android:background="#FCEDE7"
     tools:context=".ui.appscreen.SkinTypeFragment">
 
 
@@ -13,14 +13,14 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:padding="22dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:layout_gravity="center"
         android:layout_marginStart="2dp">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/diagnose"
         android:layout_width="370dp"
-        android:layout_height="130dp"
+        android:layout_height="140dp"
         android:backgroundTint="@color/card_color"
         app:cardCornerRadius="30dp"
         app:cardElevation="3dp"
@@ -53,11 +53,11 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/oil"
             android:layout_width="370dp"
-            android:layout_height="130dp"
+            android:layout_height="140dp"
             android:backgroundTint="#C29A7E"
             app:cardCornerRadius="30dp"
             app:cardElevation="3dp"
-            android:layout_marginTop="18dp"
+            android:layout_marginTop="25dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView6">
@@ -87,11 +87,11 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/diagnose1"
             android:layout_width="370dp"
-            android:layout_height="130dp"
+            android:layout_height="140dp"
             android:backgroundTint="@color/card_color"
             app:cardCornerRadius="30dp"
             app:cardElevation="3dp"
-            android:layout_marginTop="18dp"
+            android:layout_marginTop="25dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView6">
@@ -101,7 +101,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
                 android:scaleType="centerCrop"
-                android:src="@drawable/oilskin"
+                android:src="@drawable/oil"
                 tools:ignore="ImageContrastCheck" />
 
             <TextView
@@ -109,7 +109,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="27dp"
                 android:layout_marginTop="50dp"
-                android:text="Oil Skin"
+                android:text="Oily Skin"
                 android:textColor="@color/first_color"
                 android:textSize="25sp"
                 android:fontFamily="monospace"
@@ -122,11 +122,11 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/diagnose2"
             android:layout_width="370dp"
-            android:layout_height="130dp"
+            android:layout_height="140dp"
             android:backgroundTint="#C29A7E"
             app:cardCornerRadius="30dp"
             app:cardElevation="3dp"
-            android:layout_marginTop="18dp"
+            android:layout_marginTop="25dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView6">
@@ -143,52 +143,14 @@
                 android:layout_width="180dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="27dp"
-                android:layout_marginTop="50dp"
-                android:text="Mix Skin"
-                android:textColor="#513A29
-"
+                android:layout_marginTop="45dp"
+                android:text="Combination\n   Skin"
+                android:textColor="#513A29"
                 android:textSize="25sp"
                 android:fontFamily="monospace"
                 android:textStyle="bold|italic" />
 
 
         </androidx.cardview.widget.CardView>
-
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/diagnose4"
-            android:layout_width="370dp"
-            android:layout_height="130dp"
-            android:backgroundTint="@color/card_color"
-            app:cardCornerRadius="30dp"
-            app:cardElevation="3dp"
-            android:layout_marginTop="18dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView6">
-
-            <ImageView
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="end"
-                android:scaleType="centerCrop"
-                android:src="@drawable/sensitive"
-                tools:ignore="ImageContrastCheck" />
-
-            <TextView
-                android:layout_width="180dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="25dp"
-                android:layout_marginTop="50dp"
-                android:text="Sensitive\n  Skin"
-                android:textColor="@color/first_color"
-                android:textSize="25sp"
-                android:fontFamily="monospace"
-                android:textStyle="bold|italic" />
-
-
-        </androidx.cardview.widget.CardView>
-
-
     </LinearLayout>
 </ScrollView>

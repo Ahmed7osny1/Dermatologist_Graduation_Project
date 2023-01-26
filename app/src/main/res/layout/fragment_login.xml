@@ -129,9 +129,9 @@
                     android:layout_height="wrap_content"
                     android:hint="Email"
                     app:startIconDrawable="@drawable/ic_baseline_email_24"
-                    app:startIconTint="#897562"
+                    app:startIconTint="#512904"
                     app:endIconMode="clear_text"
-                    app:endIconTint="#897562"
+                    app:endIconTint="#512904"
                     android:layout_marginEnd="25dp"
                     android:layout_marginStart="25dp"
                     android:layout_marginTop="50dp"
@@ -139,10 +139,10 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     tools:ignore="MissingConstraints"
-                    app:boxStrokeColor="#ac8579"
-                    app:helperTextTextColor="#b8958a"
-                    android:textColorHint="#b8958a"
-                    app:hintTextColor="#8c4a15">
+                    app:boxStrokeColor="#461F15"
+                    app:helperTextTextColor="#4D352E"
+                    android:textColorHint="#422922"
+                    app:hintTextColor="#733C10">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/et_email"
@@ -158,10 +158,10 @@
                     android:layout_height="wrap_content"
                     android:hint="Password"
                     app:counterEnabled="true"
-                    app:endIconTint="#897562"
+                    app:endIconTint="#512904"
                     app:endIconMode="password_toggle"
                     app:startIconDrawable="@drawable/ic_lock"
-                    app:startIconTint="#897562"
+                    app:startIconTint="#512904"
                     android:layout_marginEnd="25dp"
                     android:layout_marginStart="25dp"
                     android:layout_marginTop="12dp"
@@ -169,10 +169,10 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     tools:ignore="MissingConstraints"
-                    app:boxStrokeColor="#ac8579"
-                    app:helperTextTextColor="#b8958a"
-                    android:textColorHint="#b8958a"
-                    app:hintTextColor="#8c4a15">
+                    app:boxStrokeColor="#180C09"
+                    app:helperTextTextColor="#4D352E"
+                    android:textColorHint="#422922"
+                    app:hintTextColor="#733C10">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/et_password"
@@ -191,7 +191,7 @@
                     android:layout_marginEnd="25dp"
                     android:padding="5dp"
                     android:text="Forget Password?"
-                    android:textColor="#733420"
+                    android:textColor="#873600"
                     android:textSize="21dp"
                     android:textStyle="normal"
                     app:layout_constraintEnd_toEndOf="parent"
