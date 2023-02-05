@@ -10,8 +10,8 @@ import com.autismagraduation.dermatologist.databinding.FragmentDatausedBinding
 
 class DataUsedFragment : Fragment() {
 
-    private lateinit var binding: FragmentDatausedBinding
-    val args :DataUsedFragmentArgs by navArgs()
+    private var binding: FragmentDatausedBinding? = null
+    private val args :DataUsedFragmentArgs by this.navArgs()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -22,12 +22,12 @@ class DataUsedFragment : Fragment() {
 
         val myData = args.dataused
 
-        binding.dataImage.setImageResource(myData.img)
-        binding.dataTitle.text = myData.AdviseTitle
-        binding.dataDescription.text = myData.AdviseDiscription
-        binding.dataUesd.text = myData.AdviseUse
+        binding!!.dataImage.setImageResource(myData.img)
+        binding!!.dataTitle.text = myData.AdviseTitle
+        binding!!.dataDescription.text = myData.AdviseDiscription
+        binding!!.dataUesd.text = myData.AdviseUse
 
-        return binding.root
+        return binding!!.root
     }
 
 

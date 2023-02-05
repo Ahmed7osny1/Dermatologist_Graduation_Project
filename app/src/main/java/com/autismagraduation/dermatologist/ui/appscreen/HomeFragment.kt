@@ -5,10 +5,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import androidx.navigation.Navigation
 import com.autismagraduation.dermatologist.R
 import com.autismagraduation.dermatologist.databinding.FragmentHomeBinding
-import kotlinx.android.synthetic.main.fragment_home.view.*
 
 class HomeFragment : Fragment() {
 
@@ -27,7 +27,7 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.diagnose.checkDiagnose.setOnClickListener {
+        binding.diagnose.findViewById<Button>(R.id.checkDiagnose).setOnClickListener {
             Navigation.findNavController(requireView()).navigate(
                 R.id.action_homeFragment_to_model
             )

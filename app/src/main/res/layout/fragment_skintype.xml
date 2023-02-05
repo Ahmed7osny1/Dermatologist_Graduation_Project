@@ -10,7 +10,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="22dp"
         android:layout_marginTop="5dp"
@@ -18,7 +18,7 @@
         android:layout_marginStart="2dp">
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/diagnose"
+        android:id="@+id/normal"
         android:layout_width="370dp"
         android:layout_height="140dp"
         android:backgroundTint="@color/card_color"
@@ -51,7 +51,7 @@
     </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/oil"
+            android:id="@+id/dry"
             android:layout_width="370dp"
             android:layout_height="140dp"
             android:backgroundTint="#C29A7E"
@@ -85,7 +85,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/diagnose1"
+            android:id="@+id/oil"
             android:layout_width="370dp"
             android:layout_height="140dp"
             android:backgroundTint="@color/card_color"
@@ -120,7 +120,7 @@
 
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/diagnose2"
+            android:id="@+id/combination"
             android:layout_width="370dp"
             android:layout_height="140dp"
             android:backgroundTint="#C29A7E"

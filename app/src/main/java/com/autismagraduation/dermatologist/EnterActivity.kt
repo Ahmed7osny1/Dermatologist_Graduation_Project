@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
-import kotlinx.android.synthetic.main.activity_enter.*
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class EnterActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -12,7 +12,8 @@ class EnterActivity : AppCompatActivity() {
         setContentView(R.layout.activity_enter)
 
         val navController = findNavController(R.id.fragmentContainerView)
-        bottomNavigationView.setupWithNavController(navController)
+        val bottomNavigation = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
+        bottomNavigation.setupWithNavController(navController)
 
     }
 }

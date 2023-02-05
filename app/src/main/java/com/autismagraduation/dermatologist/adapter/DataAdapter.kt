@@ -5,10 +5,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.appcompat.widget.AppCompatButton
 import androidx.recyclerview.widget.RecyclerView
 import com.autismagraduation.dermatologist.R
 import com.autismagraduation.dermatologist.data.DataUsed
-import kotlinx.android.synthetic.main.advise_item.view.*
 
 class DataAdapter (private var MyList: ArrayList<DataUsed>) :
     RecyclerView.Adapter<DataAdapter.ViewHolder>() {
@@ -57,7 +57,7 @@ class DataAdapter (private var MyList: ArrayList<DataUsed>) :
 
         init {
 
-            itemView.medicine_cart_btn.setOnClickListener {
+            itemView.findViewById<AppCompatButton>(R.id.medicine_cart_btn).setOnClickListener {
 
                 listener.dataAction(adapterPosition)
 
