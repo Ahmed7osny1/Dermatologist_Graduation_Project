@@ -1,20 +1,17 @@
 package com.autismagraduation.dermatologist.ui.onboarding
 
-import android.content.SharedPreferences
+import android.content.Context
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
-import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.size
-import androidx.navigation.Navigation
+import androidx.navigation.fragment.findNavController
 import androidx.viewpager.widget.ViewPager
 import com.autismagraduation.dermatologist.R
 import com.autismagraduation.dermatologist.adapter.ViewPagerAdapter
 import com.autismagraduation.dermatologist.data.OnboardingData
-import com.autismagraduation.dermatologist.databinding.FragmentDataBinding
 import com.autismagraduation.dermatologist.databinding.FragmentOnboardBinding
 import com.google.android.material.tabs.TabLayout
 
@@ -32,7 +29,8 @@ class OnboardFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         // Inflate the layout for this fragment
-        binding = FragmentOnboardBinding.inflate(inflater, container, false)
+        binding = FragmentOnboardBinding.inflate(inflater, container,
+            false)
 
         return binding.root
     }
@@ -44,13 +42,16 @@ class OnboardFragment : Fragment() {
         val onBoardingData: MutableList<OnboardingData> = ArrayList()
 
         onBoardingData.add(
-            OnboardingData(R.drawable.acrom,"hey","Easy to post your job offer to job seekers")
+            OnboardingData(R.drawable.acrom,"hey",
+                "Easy to post your job offer to job seekers")
         )
         onBoardingData.add(
-            OnboardingData(R.drawable.atoderm,"hello","Easy to post your job offer to job seekers")
+            OnboardingData(R.drawable.atoderm,"hello",
+                "Easy to post your job offer to job seekers")
         )
         onBoardingData.add(
-            OnboardingData(R.drawable.biored,"hi","Easy to post your job offer to job seekers")
+            OnboardingData(R.drawable.biored,"hi",
+                "Easy to post your job offer to job seekers")
         )
 
         setOnboardingViewPager(onBoardingData)
@@ -64,9 +65,9 @@ class OnboardFragment : Fragment() {
                 position++
                 onboardingViewPager.currentItem = position
             }
-            if(position == onboardingViewPager.size){
-                savePrefData()
-                Navigation.findNavController(requireView()).navigate(
+            if(position == onboardingViewPager.size + 1){
+                onBoardingFinished()
+                findNavController().navigate(
                     R.id.action_onboardFragment_to_login)
             }
 
@@ -75,7 +76,7 @@ class OnboardFragment : Fragment() {
         tabLayout.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
             override fun onTabSelected(tab: TabLayout.Tab) {
                 position = tab.position
-                if (tab.position == onboardingViewPager.size - 1) {
+                if (tab.position == 2) {
                     next.text = "Get Started"
                 } else {
                     next.text = "Next"
@@ -87,22 +88,12 @@ class OnboardFragment : Fragment() {
         })
     }
 
-    private fun restorePref(): Boolean {
-        val sharedPreferences = requireActivity().getSharedPreferences("mypref",
-            AppCompatActivity.MODE_PRIVATE
-        )
-        return sharedPreferences.getBoolean("isFristTimeLaunch", false)
-    }
-
-    private fun savePrefData() {
-
-        val sharedPreferences: SharedPreferences =   requireActivity().getSharedPreferences(
-            "mypref", AppCompatActivity.MODE_PRIVATE
-        )
-        val editor = sharedPreferences.edit()
-        editor.putBoolean("isFristTimeLaunch", true)
+    private fun onBoardingFinished(){
+        val sharedPref = requireActivity().getSharedPreferences("onBoarding",
+            Context.MODE_PRIVATE)
+        val editor = sharedPref.edit()
+        editor.putBoolean("Finished", true)
         editor.apply()
-
     }
 
     private fun setOnboardingViewPager(onboardingData: List<OnboardingData>){

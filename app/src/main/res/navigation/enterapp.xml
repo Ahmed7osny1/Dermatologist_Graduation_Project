@@ -15,10 +15,20 @@
             app:destination="@id/onboardFragment"
             app:popUpTo="@id/onboardFragment"
             app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_splashFragment_to_enterActivity"
+            app:destination="@id/enterActivity"
+            app:popUpTo="@id/enterActivity"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_splashFragment_to_login"
+            app:destination="@id/login"
+            app:popUpTo="@id/login"
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/login"
-        android:name="com.autismagraduation.dermatologist.Login"
+        android:name="com.autismagraduation.dermatologist.ui.enterapp.Login"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action

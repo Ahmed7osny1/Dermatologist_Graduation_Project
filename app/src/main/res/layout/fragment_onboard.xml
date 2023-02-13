@@ -19,10 +19,11 @@
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tab_indicator"
-        android:layout_width="100dp"
+        android:layout_width="80dp"
         android:layout_height="?actionBarSize"
         android:layout_marginStart="32dp"
         android:layout_marginBottom="8dp"
+        app:tabBackground="@drawable/indicator_selector"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:tabIndicatorHeight="0dp" />
