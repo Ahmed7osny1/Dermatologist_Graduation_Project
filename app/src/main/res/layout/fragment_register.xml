@@ -99,7 +99,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="18dp"
                 android:orientation="vertical"
                 android:padding="5dp">
 
@@ -115,9 +115,9 @@
                         android:layout_height="wrap_content"
                         android:hint="First Name"
                         app:startIconDrawable="@drawable/ic_person"
-                        app:startIconTint="#897562"
+                        app:startIconTint="#512904"
                         app:endIconMode="clear_text"
-                        app:endIconTint="#897562"
+                        app:endIconTint="#512904"
                         android:layout_marginStart="25dp"
                         android:layout_marginTop="5dp"
                         android:layout_marginEnd="10dp"
@@ -125,10 +125,10 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         tools:ignore="MissingConstraints"
-                        app:boxStrokeColor="#ac8579"
-                        app:helperTextTextColor="#b8958a"
-                        android:textColorHint="#b8958a"
-                        app:hintTextColor="#8c4a15">
+                        app:boxStrokeColor="#461F15"
+                        app:helperTextTextColor="#4D352E"
+                        android:textColorHint="#422922"
+                        app:hintTextColor="#733C10">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/et_firstname"
@@ -144,19 +144,19 @@
                         android:layout_height="wrap_content"
                         android:hint="Last Name"
                         app:startIconDrawable="@drawable/ic_person"
-                        app:startIconTint="#897562"
+                        app:startIconTint="#512904"
                         app:endIconMode="clear_text"
-                        app:endIconTint="#897562"
+                        app:endIconTint="#512904"
                         android:layout_marginEnd="25dp"
                         android:layout_marginTop="5dp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         tools:ignore="MissingConstraints"
-                        app:boxStrokeColor="#ac8579"
-                        app:helperTextTextColor="#b8958a"
-                        android:textColorHint="#b8958a"
-                        app:hintTextColor="#8c4a15">
+                        app:boxStrokeColor="#461F15"
+                        app:helperTextTextColor="#4D352E"
+                        android:textColorHint="#422922"
+                        app:hintTextColor="#733C10">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/et_lastname"
@@ -174,9 +174,9 @@
                     android:layout_height="wrap_content"
                     android:hint="Email"
                     app:startIconDrawable="@drawable/ic_baseline_email_24"
-                    app:startIconTint="#897562"
+                    app:startIconTint="#512904"
                     app:endIconMode="clear_text"
-                    app:endIconTint="#897562"
+                    app:endIconTint="#512904"
                     android:layout_marginEnd="25dp"
                     android:layout_marginStart="25dp"
                     android:layout_marginTop="5dp"
@@ -184,10 +184,10 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     tools:ignore="MissingConstraints"
-                    app:boxStrokeColor="#ac8579"
-                    app:helperTextTextColor="#b8958a"
-                    android:textColorHint="#b8958a"
-                    app:hintTextColor="#8c4a15">
+                    app:boxStrokeColor="#461F15"
+                    app:helperTextTextColor="#4D352E"
+                    android:textColorHint="#422922"
+                    app:hintTextColor="#733C10">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/et_email"
@@ -203,10 +203,10 @@
                     android:layout_height="wrap_content"
                     android:hint="Password"
                     app:counterEnabled="true"
-                    app:endIconTint="#897562"
+                    app:endIconTint="#512904"
                     app:endIconMode="password_toggle"
                     app:startIconDrawable="@drawable/ic_lock"
-                    app:startIconTint="#897562"
+                    app:startIconTint="#512904"
                     android:layout_marginEnd="25dp"
                     android:layout_marginStart="25dp"
                     android:layout_marginTop="5dp"
@@ -214,10 +214,10 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     tools:ignore="MissingConstraints"
-                    app:boxStrokeColor="#ac8579"
-                    app:helperTextTextColor="#b8958a"
-                    android:textColorHint="#b8958a"
-                    app:hintTextColor="#8c4a15">
+                    app:boxStrokeColor="#461F15"
+                    app:helperTextTextColor="#4D352E"
+                    android:textColorHint="#422922"
+                    app:hintTextColor="#733C10">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/et_password"
@@ -234,21 +234,21 @@
                     android:layout_height="wrap_content"
                     android:hint="Confirm Password"
                     app:counterEnabled="true"
-                    app:endIconTint="#897562"
+                    app:endIconTint="#512904"
                     app:endIconMode="password_toggle"
                     app:startIconDrawable="@drawable/ic_lock"
-                    app:startIconTint="#897562"
+                    app:startIconTint="#512904"
                     android:layout_marginEnd="25dp"
                     android:layout_marginStart="25dp"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="1dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     tools:ignore="MissingConstraints"
-                    app:boxStrokeColor="#ac8579"
-                    app:helperTextTextColor="#b8958a"
-                    android:textColorHint="#b8958a"
-                    app:hintTextColor="#8c4a15">
+                    app:boxStrokeColor="#461F15"
+                    app:helperTextTextColor="#4D352E"
+                    android:textColorHint="#422922"
+                    app:hintTextColor="#733C10">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/et_confirmpassword"
@@ -266,20 +266,20 @@
                     android:hint="Phone Number"
                     app:counterEnabled="true"
                     app:startIconDrawable="@drawable/ic_phone"
-                    app:startIconTint="#897562"
+                    app:startIconTint="#512904"
                     android:layout_marginEnd="25dp"
                     android:layout_marginStart="25dp"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="1dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     tools:ignore="MissingConstraints"
-                    app:boxStrokeColor="#ac8579"
-                    app:helperTextTextColor="#b8958a"
-                    android:textColorHint="#b8958a"
-                    app:hintTextColor="#8c4a15"
+                    app:boxStrokeColor="#461F15"
+                    app:helperTextTextColor="#4D352E"
+                    android:textColorHint="#422922"
+                    app:hintTextColor="#733C10"
                     app:endIconMode="clear_text"
-                    app:endIconTint="#897562">
+                    app:endIconTint="#512904">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/et_phone"
@@ -289,6 +289,36 @@
                         android:maxLength="11"/>
                 </com.google.android.material.textfield.TextInputLayout>
 
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/address"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Address"
+                    app:counterEnabled="true"
+                    app:startIconDrawable="@drawable/baseline_location_on_24"
+                    app:startIconTint="#512904"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="1dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints"
+                    app:boxStrokeColor="#461F15"
+                    app:helperTextTextColor="#4D352E"
+                    android:textColorHint="#422922"
+                    app:hintTextColor="#733C10"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="#512904">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:maxLength="11"/>
+                </com.google.android.material.textfield.TextInputLayout>
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/signupIn"
@@ -303,7 +333,7 @@
                     android:textColor="@color/white"
                     android:textSize="30sp"
                     android:padding="5dp"
-                    android:layout_marginTop="15dp"
+                    android:layout_marginTop="13dp"
                     android:layout_marginEnd="25dp"
                     android:layout_marginStart="25dp"
                     android:layout_marginBottom="10dp"
@@ -317,7 +347,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="9dp"
                     android:padding="5dp"
                     android:text="Do You Have an Account?"
                     android:textColor="#733420"
