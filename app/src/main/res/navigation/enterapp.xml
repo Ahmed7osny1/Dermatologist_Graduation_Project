@@ -11,8 +11,10 @@
         android:label="fragment_splash"
         tools:layout="@layout/fragment_splash" >
         <action
-            android:id="@+id/action_splashFragment_to_login"
-            app:destination="@id/login" />
+            android:id="@+id/action_splashFragment_to_onboardFragment"
+            app:destination="@id/onboardFragment"
+            app:popUpTo="@id/onboardFragment"
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/login"
@@ -36,4 +38,15 @@
         android:name="com.autismagraduation.dermatologist.EnterActivity"
         android:label="activity_enter"
         tools:layout="@layout/activity_enter" />
+    <fragment
+        android:id="@+id/onboardFragment"
+        android:name="com.autismagraduation.dermatologist.ui.onboarding.OnboardFragment"
+        android:label="fragment_onboard"
+        tools:layout="@layout/fragment_onboard" >
+        <action
+            android:id="@+id/action_onboardFragment_to_login"
+            app:destination="@id/login"
+            app:popUpTo="@id/login"
+            app:popUpToInclusive="true" />
+    </fragment>
 </navigation>
