@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_color"
+    tools:context=".homeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="25dp"
+            android:src="@drawable/kiss"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="35dp"
+            android:text="Derma\nKeep your skin clear"
+            android:textColor="@color/first_color"
+            android:textSize="30sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/diagnose"
+            android:layout_width="375dp"
+            android:layout_height="195dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/card_color"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.555"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:scaleType="centerCrop"
+                android:src="@drawable/skindiagnosis"
+                tools:ignore="ImageContrastCheck" />
+
+            <TextView
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="25dp"
+                android:text="@string/we_will_help_nyou_diagnose_na_skin_disease"
+                android:textColor="@color/first_color"
+                android:textSize="20sp"
+                android:textStyle="bold|italic" />
+
+        </androidx.cardview.widget.CardView>
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/diagnose"
+            app:layout_constraintVertical_bias="0.155">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/medicineMenu"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:backgroundTint="@color/card_color"
+                    app:cardCornerRadius="25dp"
+                    app:cardElevation="10dp">
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="120dp"
+                        android:padding="15dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/pngegg" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="40dp"
+                        android:text="Medicines"
+                        android:textColor="#7A3F0F"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="80dp"
+                        android:layout_marginEnd="10dp"
+                        android:gravity="center"
+                        android:text="You can get Medicines for all skin types."
+                        android:textColor="@color/first_color"
+                        android:textSize="15sp" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/skincareMenu"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:backgroundTint="@color/card_color"
+                    app:cardCornerRadius="25dp"
+                    app:cardElevation="10dp">
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="130dp"
+                        android:padding="25dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/skincare" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="40dp"
+                        android:text="Skincare"
+                        android:textColor="#7A3F0F"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="80dp"
+                        android:layout_marginEnd="10dp"
+                        android:gravity="center"
+                        android:text="You can get Skincare for Maintaining skin integrity."
+                        android:textColor="@color/first_color"
+                        android:textSize="15sp" />
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/herbsMenu"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:backgroundTint="@color/card_color"
+                    app:cardCornerRadius="25dp"
+                    app:cardElevation="10dp">
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="120dp"
+                        android:padding="18dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/kiss" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="40dp"
+                        android:text="Herbs"
+                        android:textColor="#7A3F0F"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="80dp"
+                        android:layout_marginEnd="10dp"
+                        android:gravity="center"
+                        android:text="You can get Useful herbs for skin care."
+                        android:textColor="@color/first_color"
+                        android:textSize="15sp" />
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

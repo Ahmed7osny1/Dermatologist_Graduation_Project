@@ -52,7 +52,7 @@
         android:layout_marginTop="50dp"
         android:gravity="start"
         android:padding="5dp"
-        android:text="Click on the camera to \n Take ot Upload Image"
+        android:text="Click on the camera to \n Take or Upload Image"
         android:textColor="#733420"
         android:textSize="21dp"
         android:textStyle="italic|bold"
