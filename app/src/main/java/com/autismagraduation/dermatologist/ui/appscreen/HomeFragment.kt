@@ -48,5 +48,7 @@ class HomeFragment : Fragment() {
                 R.id.action_homeFragment_to_skintypeFragment)
         }
 
+
+
     }
 }

@@ -54,7 +54,7 @@ class MedicineFragment : Fragment() {
         myArray.add(
             MedicineData(
                 R.drawable.kiss,
-                "Mayade",
+                "Mayada",
                 "senior",
                 15.5,
             )

@@ -7,14 +7,9 @@
         android:title="Home" />
 
     <item
-        android:id="@+id/favoriteFragment"
-        android:icon="@drawable/ic_favorite"
-        android:title="Favorite" />
-
-    <item
-        android:id="@+id/medicineorder"
-        android:icon="@drawable/ic_order"
-        android:title="My Order" />
+        android:id="@+id/paymentFragment"
+        android:icon="@drawable/ic_cart"
+        android:title="My Cart" />
 
     <item
         android:id="@+id/offerFragment"
@@ -25,6 +20,11 @@
         android:id="@+id/splashFragment"
         android:icon="@drawable/ic_person"
         android:title="Profile" />
+
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/ic_logout"
+        android:title="Log Out" />
 
 
 </menu>

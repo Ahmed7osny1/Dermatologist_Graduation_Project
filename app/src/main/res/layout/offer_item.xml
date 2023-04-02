@@ -17,21 +17,10 @@
         android:padding="10dp">
 
         <ImageView
-            android:id="@+id/product_favorite"
-            android:layout_width="40dp"
-            android:layout_height="30dp"
-            android:padding="5dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/ic_favorite"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageView
             android:id="@+id/product_img"
             android:layout_width="150dp"
             android:layout_height="110dp"
             android:padding="15dp"
-            android:layout_marginStart="20dp"
             android:scaleType="centerCrop"
             android:src="@drawable/pngegg"
             app:layout_constraintEnd_toEndOf="parent"

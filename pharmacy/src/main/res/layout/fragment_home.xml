@@ -144,7 +144,7 @@
                         android:layout_height="130dp"
                         android:padding="25dp"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/skincare" />
+                         />
 
                     <TextView
                         android:layout_width="wrap_content"
