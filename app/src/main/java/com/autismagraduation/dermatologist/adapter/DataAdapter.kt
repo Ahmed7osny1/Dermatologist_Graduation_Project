@@ -62,7 +62,9 @@ class DataAdapter (private var MyList: ArrayList<DataUsed>) :
                 listener.dataAction(adapterPosition)
 
             }
+
         }
+
 
     }
 }
