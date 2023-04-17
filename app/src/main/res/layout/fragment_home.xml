@@ -265,8 +265,6 @@
 
                 </androidx.cardview.widget.CardView>
 
-
-
             </LinearLayout>
         </HorizontalScrollView>
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -300,7 +300,7 @@
                         android:drawablePadding="8dp"
                         android:paddingStart="16dp"
                         android:paddingEnd="16dp"
-                        android:text="Offers"
+                        android:text="Charity"
                         android:textAlignment="viewStart"
                         android:textColor="#A05518"
                         android:textSize="16sp"
@@ -324,38 +324,69 @@
                         android:textSize="16sp"
                         android:textStyle="bold" />
 
+
                 </LinearLayout>
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/button5"
+                        style="@android:style/Widget.Button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/main_button_background"
+                        android:drawableStart="@drawable/btn_5"
+                        android:drawablePadding="8dp"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:text="Cash Back"
+                        android:textAlignment="viewStart"
+                        android:textColor="#A05518"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/button6"
+                        style="@android:style/Widget.Button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/main_button_background"
+                        android:drawableStart="@drawable/btn_6"
+                        android:drawablePadding="8dp"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:text="Split Bills"
+                        android:textAlignment="viewStart"
+                        android:textColor="#A05518"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
 
             </LinearLayout>
-
-            <TextView
-                android:id="@+id/sub"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="OUR SUBSCRIPTIONS"
-                android:textAlignment="center"
-                android:textColor="#2F2C2C"
-                android:textSize="25dp"
-                android:textStyle="bold|italic" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:layout_marginStart="32dp"
                 android:layout_marginEnd="32dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="5dp"
-                android:elevation="5dp"
                 android:background="@drawable/bottom_banner__background">
 
                 <ImageView
                     android:id="@+id/imageView2"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/creditcards"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/wallet"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.507" />
