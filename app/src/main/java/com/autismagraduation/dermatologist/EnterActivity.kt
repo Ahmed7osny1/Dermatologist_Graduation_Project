@@ -17,19 +17,5 @@ class EnterActivity : AppCompatActivity() {
         val bottomNavigation = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
         bottomNavigation.setupWithNavController(navController)
 
-
-        bottomNavigation.setOnItemSelectedListener {
-
-            when(it.itemId) {
-                R.id.logout -> {
-                    startActivity(Intent(this, MainActivity::class.java))
-                    finish()
-                    true
-                }
-                else -> false
-            }
-
-        }
-
     }
 }

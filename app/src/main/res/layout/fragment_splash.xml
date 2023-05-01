@@ -13,7 +13,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="164dp"
             android:contentDescription="Splash"
-            android:src="@drawable/img"
+            android:src="@drawable/pngegg"
 
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

@@ -17,12 +17,12 @@
         android:title="Offers" />
 
     <item
-        android:id="@+id/splashFragment"
+        android:id="@+id/profileFragment"
         android:icon="@drawable/ic_person"
         android:title="Profile" />
 
     <item
-        android:id="@+id/logout"
+        android:id="@+id/mainActivity"
         android:icon="@drawable/ic_logout"
         android:title="Log Out" />
 

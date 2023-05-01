@@ -1,7 +1,6 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
-
     id 'androidx.navigation.safeargs.kotlin'
 }
 
@@ -37,6 +36,12 @@ android {
     configurations.all {
         resolutionStrategy { force 'androidx.core:core-ktx:1.7.0-alpha01' }
     }
+
+    buildFeatures {
+        viewBinding = true
+        dataBinding = true
+    }
+
 }
 
 dependencies {

@@ -17,6 +17,8 @@ import android.net.Uri
 import android.provider.MediaStore
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import androidx.navigation.Navigation
+import com.autismagraduation.dermatologist.R
 import com.autismagraduation.dermatologist.databinding.FragmentModelBinding
 import java.io.InputStream
 
@@ -69,6 +71,11 @@ class Model : Fragment() {
             } else {
                 chooseImage(this)
             }
+        }
+
+        binding.result.setOnClickListener {
+            Navigation.findNavController(requireView()).navigate(
+                R.id.action_model_to_resultFragment)
         }
 
     }

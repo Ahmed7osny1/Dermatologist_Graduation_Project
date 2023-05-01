@@ -30,6 +30,10 @@ class Login : Fragment() {
                 R.id.action_login_to_enterActivity)
 
         }
+        binding.Register.setOnClickListener {
+            Navigation.findNavController(requireView()).navigate(
+                R.id.action_login_to_register)
+        }
     }
 
 }
