@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#fbf2f0"
-    tools:context=".ui.enterapp.Register">
+    tools:context=".RegisterFragment">
 
     <RelativeLayout
         android:id="@+id/relative_img"
@@ -114,7 +114,7 @@
                         android:layout_width="150dp"
                         android:layout_height="wrap_content"
                         android:hint="First Name"
-                        app:startIconDrawable="@drawable/ic_person"
+                        app:startIconDrawable="@drawable/ic_baseline_person_24"
                         app:startIconTint="#512904"
                         app:endIconMode="clear_text"
                         app:endIconTint="#512904"
@@ -143,7 +143,7 @@
                         android:layout_width="150dp"
                         android:layout_height="wrap_content"
                         android:hint="Last Name"
-                        app:startIconDrawable="@drawable/ic_person"
+                        app:startIconDrawable="@drawable/ic_baseline_person_24"
                         app:startIconTint="#512904"
                         app:endIconMode="clear_text"
                         app:endIconTint="#512904"
@@ -173,7 +173,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Email"
-                    app:startIconDrawable="@drawable/ic_baseline_email_24"
+                    app:startIconDrawable="@drawable/baseline_email_24"
                     app:startIconTint="#512904"
                     app:endIconMode="clear_text"
                     app:endIconTint="#512904"
@@ -265,7 +265,7 @@
                     android:layout_height="wrap_content"
                     android:hint="Phone Number"
                     app:counterEnabled="true"
-                    app:startIconDrawable="@drawable/ic_phone"
+                    app:startIconDrawable="@drawable/baseline_phone_24"
                     app:startIconTint="#512904"
                     android:layout_marginEnd="25dp"
                     android:layout_marginStart="25dp"
