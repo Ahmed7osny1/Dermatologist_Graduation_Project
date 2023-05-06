@@ -10,4 +10,12 @@
     <string name="save_your_skin">Save your skin</string>
     <string name="we_will_help_nyou_diagnose_na_skin_disease">We  will  help\nyou  diagnose\na skin  disease</string>
 
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <string name="forget_password">Forget Password?</string>
+    <string name="email">Email</string>
+    <string name="send">Send</string>
+
+    <string name="enter_your_email_address_associated_with_your_account">Enter Your Email Address Associated With Your Account.</string>
 </resources>

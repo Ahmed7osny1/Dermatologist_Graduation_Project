@@ -295,7 +295,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Address"
-                    app:counterEnabled="true"
                     app:startIconDrawable="@drawable/baseline_location_on_24"
                     app:startIconTint="#512904"
                     android:layout_marginEnd="25dp"
@@ -316,8 +315,7 @@
                         android:id="@+id/et_address"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="number"
-                        android:maxLength="11"/>
+                        android:inputType="text" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <androidx.appcompat.widget.AppCompatButton
@@ -333,7 +331,7 @@
                     android:textColor="@color/white"
                     android:textSize="30sp"
                     android:padding="5dp"
-                    android:layout_marginTop="13dp"
+                    android:layout_marginTop="25dp"
                     android:layout_marginEnd="25dp"
                     android:layout_marginStart="25dp"
                     android:layout_marginBottom="10dp"

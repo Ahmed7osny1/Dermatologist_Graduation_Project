@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="nav_view" type="id">nav_view</item>
+    <item name="relativelayout" type="id">relativelayout</item>
+    <item name="backBtnProfile" type="id">backBtnProfile</item>
+</resources>
