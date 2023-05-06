@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ProfileFragment">
+    tools:context=".ui.ProfileFragment">
 
     <RelativeLayout
         android:id="@id/relativelayout"
@@ -51,7 +51,7 @@
         android:layout_marginTop="30dp"
         android:text="Account Info"
         android:textColor="@color/second_color"
-        android:textSize="22dp"
+        android:textSize="22sp"
         android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.135"
@@ -76,7 +76,7 @@
         android:layout_marginEnd="172dp"
         android:text="Name"
         android:textColor="#461F15"
-        android:textSize="15dp"
+        android:textSize="15sp"
         android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -89,7 +89,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="your name"
-        android:textSize="14dp"
+        android:textSize="14sp"
         android:textStyle="bold|italic"
         android:textColor="#733C10"
         app:layout_constraintEnd_toEndOf="parent"
@@ -115,7 +115,7 @@
         android:layout_marginEnd="172dp"
         android:text="Mobile"
         android:textColor="#461F15"
-        android:textSize="15dp"
+        android:textSize="15sp"
         android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
