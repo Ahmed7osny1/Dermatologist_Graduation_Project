@@ -3,4 +3,5 @@
     <item name="nav_view" type="id">nav_view</item>
     <item name="relativelayout" type="id">relativelayout</item>
     <item name="backBtnProfile" type="id">backBtnProfile</item>
+    <item name="textView101" type="id">textView101</item>
 </resources>
