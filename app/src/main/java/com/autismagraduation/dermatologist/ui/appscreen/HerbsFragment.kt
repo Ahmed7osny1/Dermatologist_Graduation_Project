@@ -12,6 +12,7 @@ import com.autismagraduation.dermatologist.R
 import com.autismagraduation.dermatologist.adapter.DataAdapter
 import com.autismagraduation.dermatologist.data.DataUsed
 import com.autismagraduation.dermatologist.databinding.FragmentHerbsBinding
+import com.autismagraduation.dermatologist.`object`.SetDataHerbs
 
 class HerbsFragment : Fragment() {
 
@@ -44,23 +45,7 @@ class HerbsFragment : Fragment() {
 
         myArray = arrayListOf<DataUsed>()
 
-        myArray.add(
-            DataUsed(
-                R.drawable.pngegg,
-                "Mayade",
-                "senior",
-                "jhhhhh"
-            )
-        )
-
-        myArray.add(
-            DataUsed(
-                R.drawable.kiss,
-                "Mayade",
-                "senior",
-                "jjjjjjjjj"
-            )
-        )
+        myArray = SetDataHerbs.getDataHerbs()
 
 
         val adapter = DataAdapter(myArray)
