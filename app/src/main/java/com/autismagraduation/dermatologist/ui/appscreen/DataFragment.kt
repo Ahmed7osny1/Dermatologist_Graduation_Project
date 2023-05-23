@@ -21,7 +21,7 @@ class DataFragment : Fragment() {
 
     private lateinit var myArray: ArrayList<DataUsed>
     private lateinit var binding: FragmentDataBinding
-    private val args :DataFragmentArgs by this.navArgs()
+    private val args :DataFragmentArgs by navArgs()
 
 
     override fun onCreateView(

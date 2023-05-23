@@ -60,11 +60,7 @@ class DataAdapter (private var MyList: ArrayList<DataUsed>) :
             itemView.findViewById<AppCompatButton>(R.id.medicine_cart_btn).setOnClickListener {
 
                 listener.dataAction(adapterPosition)
-
             }
-
         }
-
-
     }
 }

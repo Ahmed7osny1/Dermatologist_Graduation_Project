@@ -15,8 +15,8 @@ class MedicineAdapter (private var MyList: ArrayList<MedicineData>) :
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
 
-        val v = LayoutInflater.from(parent.context).inflate(R.layout.medicine_item,
-            parent,false)
+        val v = LayoutInflater.from(parent.context).inflate(
+            R.layout.medicine_item, parent,false)
 
         return ViewHolder(v)
     }

@@ -7,8 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.StaggeredGridLayoutManager
-import com.autismagraduation.dermatologist.R
 import com.autismagraduation.dermatologist.adapter.DataAdapter
 import com.autismagraduation.dermatologist.data.DataUsed
 import com.autismagraduation.dermatologist.databinding.FragmentHerbsBinding
@@ -34,8 +32,8 @@ class HerbsFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
 
-        binding.herbsRecycleView.layoutManager = StaggeredGridLayoutManager(2,
-            LinearLayoutManager.VERTICAL)
+        binding.herbsRecycleView.layoutManager = LinearLayoutManager(requireContext(),
+            LinearLayoutManager.VERTICAL,false)
 
         getData()
 

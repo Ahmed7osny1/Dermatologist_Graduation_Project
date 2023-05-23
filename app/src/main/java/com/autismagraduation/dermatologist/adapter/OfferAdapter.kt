@@ -17,8 +17,7 @@ class OfferAdapter (private var MyList: ArrayList<OfferData>) :
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
 
         val v = LayoutInflater.from(parent.context).inflate(
-            R.layout.offer_item,
-            parent,false)
+            R.layout.offer_item, parent,false)
 
         return ViewHolder(v)
     }
