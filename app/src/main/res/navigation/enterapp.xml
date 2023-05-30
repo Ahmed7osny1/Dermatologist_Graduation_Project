@@ -28,7 +28,7 @@
     </fragment>
     <fragment
         android:id="@+id/login"
-        android:name="com.autismagraduation.dermatologist.ui.enterapp.Login"
+        android:name="com.autismagraduation.dermatologist.ui.enterapp.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
@@ -40,9 +40,13 @@
     </fragment>
     <fragment
         android:id="@+id/register"
-        android:name="com.autismagraduation.dermatologist.ui.enterapp.Register"
+        android:name="com.autismagraduation.dermatologist.ui.enterapp.RegisterFragment"
         android:label="fragment_register"
-        tools:layout="@layout/fragment_register" />
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_register_to_login"
+            app:destination="@id/login" />
+    </fragment>
     <activity
         android:id="@+id/enterActivity"
         android:name="com.autismagraduation.dermatologist.EnterActivity"

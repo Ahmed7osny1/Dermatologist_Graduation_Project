@@ -42,8 +42,11 @@ class OnboardFragment : Fragment() {
         val onBoardingData: MutableList<OnboardingData> = ArrayList()
 
         onBoardingData.add(
-            OnboardingData(R.drawable.acrom,"hey",
-                "Easy to post your job offer to job seekers")
+            OnboardingData(
+                R.drawable.acrom,
+                getString(R.string.hey),
+                "Easy to post your job offer to job seekers"
+            )
         )
         onBoardingData.add(
             OnboardingData(R.drawable.atoderm,"hello",

@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#fbf2f0"
-    tools:context=".ui.enterapp.Login">
+    tools:context=".ui.enterapp.LoginFragment">
 
     <RelativeLayout
         android:id="@+id/relative_img"
@@ -38,7 +38,7 @@
             android:layout_marginTop="35dp"
             android:layout_marginEnd="188dp"
             android:padding="3dp"
-            android:text="Welcome"
+            android:text="@string/welcome"
             android:textColor="#8c4a15"
             android:textSize="50sp"
             android:textStyle="bold" />
@@ -54,7 +54,7 @@
             android:layout_marginTop="-10dp"
             android:layout_marginEnd="81dp"
             android:padding="1dp"
-            android:text="Back!"
+            android:text="@string/back"
             android:textColor="#8c4a15"
             android:textSize="45sp"
             android:textStyle="bold"
