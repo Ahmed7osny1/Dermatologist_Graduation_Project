@@ -3,5 +3,16 @@
     <string name="app_name">Dermatologist</string>
     <string name="welcome">welcome</string>
     <string name="back">Back!</string>
-    <string name="hey">اهلا</string>
+    <string name="hey">مرحبا بكم في ديرما</string>
+    <string name="onedesc">نحن نعتني ببشرتك</string>
+    <string name="onboardtwo">تم تصميم ديرما للمساعدة في التخلص من مشاكل البشرة على الفور</string>
+    <string name="twodesc">لذلك يمكنك دائمًا الشعور بالثقة في بشرتك</string>
+    <string name="onboardthree">التشخيص</string>
+    <string name="threedesc">تقدم ديرما تشخيصات مبتكرة تساعدك على مراقبة صحة بشرتك واكتشاف أي حالات جلدية غير عادية أو تنبيهية حتى تتمكن من تجنب العواقب غير المرغوب فيها ..</string>
+    <string name="onboardfour">العناية بالبشرة</string>
+    <string name="fourdesc">تقدم ديرما نصائح لجميع أنواع البشرة في فصول السنة المختلفة وتقترح أفضل المنتجات للعناية ببشرتك.</string>
+    <string name="onboardfive">وصفات اعشاب طبيعية</string>
+    <string name="fivedesc">تقدم ديرما نصائح لجميع أنواع البشرة في فصول السنة المختلفة وتقترح أفضل المنتجات للعناية ببشرتك.</string>
+    <string name="onboardsix">العلاجات</string>
+    <string name="sixdesc">تقدم ديرما نصائح لجميع أنواع البشرة في فصول السنة المختلفة وتقترح أفضل المنتجات للعناية ببشرتك ..</string>
 </resources>

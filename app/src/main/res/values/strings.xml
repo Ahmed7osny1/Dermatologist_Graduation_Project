@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Dermatologist</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
@@ -11,6 +11,49 @@
     <string name="back">Back!</string>
 
 
-    <string name="hey">hey</string>
+    <string name="hey">WELCOME IN DERMA</string>
+    <string name="onedesc" tools:ignore="MissingTranslation">We Take Care Of Your Skin</string>
+
+    <string name="onboardtwo" tools:ignore="MissingTranslation">"    DERMA IS DESIGNED TO HELP
+        CLEAR UP SKIN PROBLEMS
+                    INSTANTLY"</string>
+    <string name="twodesc" tools:ignore="MissingTranslation">So you can always feel confident in your own skin</string>
+
+    <string name="onboardthree" tools:ignore="MissingTranslation">DIAGNOSIS</string>
+    <string name="threedesc" tools:ignore="MissingTranslation">"    DERMA offers innovative diagnostics that helps
+
+    you monitor your skin health and detect any
+
+    unusual or alert skin conditions so you can
+
+    avoid unwanted consequences.."</string>
+
+    <string name="onboardfour" tools:ignore="MissingTranslation">SKIN CARE</string>
+    <string name="fourdesc" tools:ignore="MissingTranslation">"     Derma offers tips for all skin types in
+
+      different seasons of the year and suggests
+
+      the best products to take care of your skin."</string>
+
+    <string name="onboardfive" tools:ignore="MissingTranslation">HERBAL REMADY</string>
+    <string name="fivedesc" tools:ignore="MissingTranslation">"     Derma offers tips for all skin types in
+
+     different seasons of the year and suggests
+
+     the best products to take care of your skin."</string>
+
+    <string name="onboardsix" tools:ignore="MissingTranslation">TREATMENTS</string>
+    <string name="sixdesc" tools:ignore="MissingTranslation">"      Derma offers tips for all skin types in
+
+      different seasons of the year and suggests
+
+      the best products to take care of your skin.."</string>
+
+
+    <string name="forget_password" tools:ignore="MissingTranslation">Forget Password?</string>
+    <string name="email" tools:ignore="MissingTranslation">Email</string>
+    <string name="send" tools:ignore="MissingTranslation">Send</string>
+
+    <string name="enter_your_email_address_associated_with_your_account" tools:ignore="MissingTranslation">Enter Your Email Address Associated With Your Account.</string>
 
 </resources>

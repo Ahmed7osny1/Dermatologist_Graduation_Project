@@ -43,18 +43,46 @@ class OnboardFragment : Fragment() {
 
         onBoardingData.add(
             OnboardingData(
-                R.drawable.acrom,
+                R.drawable.sldone,
                 getString(R.string.hey),
-                "Easy to post your job offer to job seekers"
+                getString(R.string.onedesc)
+            )
+        )
+
+        onBoardingData.add(
+            OnboardingData(
+                R.drawable.sldtwo,
+                getString(R.string.onboardtwo),
+                getString(R.string.twodesc)
+            )
+        )
+
+        onBoardingData.add(
+            OnboardingData(
+                R.drawable.sldthree,
+                getString(R.string.onboardthree),
+                getString(R.string.threedesc)
             )
         )
         onBoardingData.add(
-            OnboardingData(R.drawable.atoderm,"hello",
-                "Easy to post your job offer to job seekers")
+            OnboardingData(
+                R.drawable.sldfour,
+                getString(R.string.onboardfour),
+                getString(R.string.fourdesc)
+            )
         )
         onBoardingData.add(
-            OnboardingData(R.drawable.biored,"hi",
-                "Easy to post your job offer to job seekers")
+            OnboardingData(R.drawable.sldfive,
+                getString(R.string.onboardfive),
+                getString(R.string.fivedesc)
+            )
+        )
+
+        onBoardingData.add(
+            OnboardingData(R.drawable.sldsix,
+                getString(R.string.onboardsix),
+                getString(R.string.sixdesc)
+            )
         )
 
         setOnboardingViewPager(onBoardingData)

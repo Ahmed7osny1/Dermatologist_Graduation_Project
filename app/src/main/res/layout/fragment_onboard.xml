@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FCEDE7"
     tools:context=".ui.onboarding.OnboardFragment">
 
     <androidx.viewpager.widget.ViewPager
@@ -14,7 +15,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        />
 
 
     <com.google.android.material.tabs.TabLayout
@@ -23,6 +25,7 @@
         android:layout_height="?actionBarSize"
         android:layout_marginStart="32dp"
         android:layout_marginBottom="8dp"
+        android:background="#FCEDE7"
         app:tabBackground="@drawable/indicator_selector"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
