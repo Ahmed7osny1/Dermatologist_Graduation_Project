@@ -85,6 +85,13 @@ class OnboardFragment : Fragment() {
             )
         )
 
+        onBoardingData.add(
+            OnboardingData(R.drawable.about,
+                getString(R.string.onboardseven),
+                getString(R.string.sevendesc)
+            )
+        )
+
         setOnboardingViewPager(onBoardingData)
 
         position = onboardingViewPager.currentItem
@@ -107,7 +114,7 @@ class OnboardFragment : Fragment() {
         tabLayout.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
             override fun onTabSelected(tab: TabLayout.Tab) {
                 position = tab.position
-                if (tab.position == 2) {
+                if (tab.position == 6) {
                     next.text = "Get Started"
                 } else {
                     next.text = "Next"

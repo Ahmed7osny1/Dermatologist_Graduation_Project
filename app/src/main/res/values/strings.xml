@@ -49,6 +49,24 @@
 
       the best products to take care of your skin.."</string>
 
+    <string name="onboardseven" tools:ignore="MissingTranslation">About Us</string>
+    <string name="sevendesc" tools:ignore="MissingTranslation">"                        Skin Beauty and Healthy
+
+        Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Voluptatibus asperiores
+        assumenda minus maxime labore ex modi
+        quisquam reprehenderit dolore.
+
+        Delectus maiores ducimus ratione, vero
+        doloremque voluptatibus debitis incidunt
+        quae corporis blanditiis assumenda dolorum
+        itaque aspernatur fugit corrupti, consectetur
+        similique.
+
+        Labore porro mollitia in sunt corporis
+        necessitatibus fuga nemo! Perspiciatis, dolore!"</string>
+
+
 
     <string name="forget_password" tools:ignore="MissingTranslation">Forget Password?</string>
     <string name="email" tools:ignore="MissingTranslation">Email</string>
