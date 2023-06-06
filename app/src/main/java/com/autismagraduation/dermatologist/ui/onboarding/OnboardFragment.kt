@@ -66,7 +66,7 @@ class OnboardFragment : Fragment() {
         )
         onBoardingData.add(
             OnboardingData(
-                R.drawable.sldfour,
+                R.drawable.fourrr,
                 getString(R.string.onboardfour),
                 getString(R.string.fourdesc)
             )
@@ -86,7 +86,7 @@ class OnboardFragment : Fragment() {
         )
 
         onBoardingData.add(
-            OnboardingData(R.drawable.about,
+            OnboardingData(R.drawable.aboutussss,
                 getString(R.string.onboardseven),
                 getString(R.string.sevendesc)
             )

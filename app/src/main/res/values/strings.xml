@@ -14,40 +14,51 @@
     <string name="hey">WELCOME IN DERMA</string>
     <string name="onedesc" tools:ignore="MissingTranslation">We Take Care Of Your Skin</string>
 
-    <string name="onboardtwo" tools:ignore="MissingTranslation">"    DERMA IS DESIGNED TO HELP
-        CLEAR UP SKIN PROBLEMS
-                    INSTANTLY"</string>
+    <string name="onboardtwo" tools:ignore="MissingTranslation">"DERMA IS DESIGNED TO HELP
+
+  CLEAR UP SKIN PROBLEMS
+
+     INSTANTLY"</string>
     <string name="twodesc" tools:ignore="MissingTranslation">So you can always feel confident in your own skin</string>
 
     <string name="onboardthree" tools:ignore="MissingTranslation">DIAGNOSIS</string>
-    <string name="threedesc" tools:ignore="MissingTranslation">"    DERMA offers innovative diagnostics that helps
+    <string name="threedesc" tools:ignore="MissingTranslation">"DERMA offers innovative diagnostics that helps
 
-    you monitor your skin health and detect any
+ you monitor your skin health and detect any
 
-    unusual or alert skin conditions so you can
+ unusual or alert skin conditions so you can
 
-    avoid unwanted consequences.."</string>
+ avoid unwanted consequences.."</string>
 
     <string name="onboardfour" tools:ignore="MissingTranslation">SKIN CARE</string>
-    <string name="fourdesc" tools:ignore="MissingTranslation">"     Derma offers tips for all skin types in
+    <string name="fourdesc" tools:ignore="MissingTranslation">"Derma offers skin care for all skin types in
 
-      different seasons of the year and suggests
+  different seasons of the year and suggests
 
-      the best products to take care of your skin."</string>
+  the best products to take care of your skin."</string>
 
     <string name="onboardfive" tools:ignore="MissingTranslation">HERBAL REMADY</string>
-    <string name="fivedesc" tools:ignore="MissingTranslation">"     Derma offers tips for all skin types in
+    <string name="fivedesc" tools:ignore="MissingTranslation">"Derma offers tips for all skin types in different
 
-     different seasons of the year and suggests
+seasons of the year and suggests the best
 
-     the best products to take care of your skin."</string>
+herbal recipes to take care of your skin."</string>
 
     <string name="onboardsix" tools:ignore="MissingTranslation">TREATMENTS</string>
-    <string name="sixdesc" tools:ignore="MissingTranslation">"      Derma offers tips for all skin types in
+    <string name="sixdesc" tools:ignore="MissingTranslation">"Derma provides express delivery service for all
+orders.
 
-      different seasons of the year and suggests
+Our goal is always to provide the best service to
+our customers and deliver orders as quickly as
+  possible, but the delivery time may vary based on:
 
-      the best products to take care of your skin.."</string>
+*Request time relative to working hours.
+*The duration varies from city to city.
+*Traffic conditions and peak times.
+*The type and quantity of items required and their
+ availability in pharmacies.
+*Customer response speed with the delivery
+ captain and site dispatch."</string>
 
     <string name="onboardseven" tools:ignore="MissingTranslation">About Us</string>
     <string name="sevendesc" tools:ignore="MissingTranslation">"                        Skin Beauty and Healthy
