@@ -44,81 +44,81 @@ class OfferFragment : Fragment() {
 
         myArray.add(
             OfferData(
-                R.drawable.pngegg,
-                "skincare",
-                "semi senior",
-                15.5,
-                10.5
+                R.drawable.hyalu,
+                "HYALU COLLAGEN",
+                "Eye Cream",
+                155.5,
+                133.5
             )
         )
 
         myArray.add(
             OfferData(
-                R.drawable.kiss,
-                "skincare",
-                "semi senior",
-                15.5,
-                10.5
+                R.drawable.maskara,
+                "Ecrinal",
+                "Eyelash strengthener",
+                99.99,
+                87.50
             )
         )
         myArray.add(
             OfferData(
-                R.drawable.skincare,
-                "skincare",
-                "semi senior",
-                600.99,
+                R.drawable.dna,
+                "DNA",
+                "RADIANCE EYE CONTOUR",
+                600.25,
                 500.99
             )
         )
 
         myArray.add(
             OfferData(
-                R.drawable.pngegg,
-                "skincare",
-                "semi senior",
-                15.5,
-                10.5
+                R.drawable.bodyalogen,
+                "Alejon Body lotion",
+                "Body lotion",
+                323.00,
+                297.75
             )
         )
 
 
         myArray.add(
             OfferData(
-                R.drawable.skincare,
-                "skincare",
-                "semi senior",
-                15.5,
-                10.5
+                R.drawable.nails,
+                "ECRINAL",
+                "Vitamin Nail Strengthener",
+                111.00,
+                99.75
             )
         )
 
         myArray.add(
             OfferData(
-                R.drawable.kiss,
-                "skincare",
-                "semi senior",
-                600.99,
-                500.99
+                R.drawable.urepar,
+                "UREPAR",
+                "Foot_Cream",
+                80.00,
+                65.00
             )
         )
 
         myArray.add(
             OfferData(
-                R.drawable.skincare,
-                "skincare",
-                "semi senior",
-                15.5,
-                10.5
+                R.drawable.soothing,
+                "Soothing Gel",
+                "Allontion and Vitamin E",
+                114.5,
+                98.5
             )
         )
 
         myArray.add(
             OfferData(
-                R.drawable.kiss,
-                "skincare",
-                "semi senior",
-                600.5,
-                480.5
+                R.drawable.carwhite,
+                "CARO WHITE",
+                "Creme De Beaute Eclaircissante",
+                58.5,
+                44.5
             )
         )
 

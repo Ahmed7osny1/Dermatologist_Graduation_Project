@@ -44,73 +44,73 @@ class MedicineFragment : Fragment() {
 
         myArray.add(
             MedicineData(
-                R.drawable.pngegg,
-                "Mayade",
-                "senior",
-                15.5,
+                R.drawable.qu,
+                "QV Cream",
+                "Replenishes dry skin",
+                55.5,
             )
         )
 
         myArray.add(
             MedicineData(
-                R.drawable.kiss,
-                "Mayada",
-                "senior",
-                15.5,
+                R.drawable.skular,
+                "SKYKUR",
+                "Skin Skykur Cream",
+                77.75,
             )
         )
         myArray.add(
             MedicineData(
-                R.drawable.skincare,
-                "Mayade",
-                "senior",
-                15.5,
-            )
-        )
-
-        myArray.add(
-            MedicineData(
-                R.drawable.pngegg,
-                "Mayade",
-                "senior",
-                15.5,
-            )
-        )
-
-
-        myArray.add(
-            MedicineData(
-                R.drawable.skincare,
-                "Mayade",
-                "senior",
-                15.5,
+                R.drawable.sosoft,
+                "A V O N",
+                "Sovesoft Cream",
+                33.25,
             )
         )
 
         myArray.add(
             MedicineData(
-                R.drawable.kiss,
-                "Mayade",
-                "senior",
-                15.5,
+                R.drawable.seram,
+                "INFINITY ANTI_ACING\n",
+                "DAY SERUM",
+                210.00,
+            )
+        )
+
+
+        myArray.add(
+            MedicineData(
+                R.drawable.eye,
+                "Alejon EYE",
+                "Medical concealer",
+                175.00,
             )
         )
 
         myArray.add(
             MedicineData(
-                R.drawable.skincare,
-                "Mayade",
-                "senior",
-                15.5,
+                R.drawable.nuxe,
+                "Nuxe",
+                "Oily skin routine",
+                121.25,
             )
         )
 
         myArray.add(
             MedicineData(
-                R.drawable.kiss,
-                "Mayade",
-                "senior",
-                15.5,
+                R.drawable.vichy,
+                "VICHY",
+                "Vichy Normaderm Phytosolution Double correction",
+                99.99,
+            )
+        )
+
+        myArray.add(
+            MedicineData(
+                R.drawable.biogreen,
+                "BIODERAM",
+                "Bioderma Sensibo H2O Micellar Water Makeup Remover",
+                63.99,
             )
         )
 
