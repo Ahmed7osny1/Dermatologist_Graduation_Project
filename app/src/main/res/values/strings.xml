@@ -33,9 +33,9 @@
     <string name="onboardfour" tools:ignore="MissingTranslation">SKIN CARE</string>
     <string name="fourdesc" tools:ignore="MissingTranslation">"Derma offers skin care for all skin types in
 
-  different seasons of the year and suggests
+ different seasons of the year and suggests
 
-  the best products to take care of your skin."</string>
+ the best products to take care of your skin."</string>
 
     <string name="onboardfive" tools:ignore="MissingTranslation">HERBAL REMADY</string>
     <string name="fivedesc" tools:ignore="MissingTranslation">"Derma offers tips for all skin types in different
@@ -50,32 +50,18 @@ orders.
 
 Our goal is always to provide the best service to
 our customers and deliver orders as quickly as
-  possible, but the delivery time may vary based on:
+  possible, but delivery time may vary based on:
 
-*Request time relative to working hours.
-*The duration varies from city to city.
-*Traffic conditions and peak times.
-*The type and quantity of items required and their
- availability in pharmacies.
+*Request time relative to working hours , The
+duration varies from city to city ,Traffic
+ conditions and peak times.
+*The type and quantity of items required and
+        their availability in pharmacies.
 *Customer response speed with the delivery
- captain and site dispatch."</string>
+        captain and site dispatch."</string>
 
     <string name="onboardseven" tools:ignore="MissingTranslation">About Us</string>
-    <string name="sevendesc" tools:ignore="MissingTranslation">"                        Skin Beauty and Healthy
-
-        Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Voluptatibus asperiores
-        assumenda minus maxime labore ex modi
-        quisquam reprehenderit dolore.
-
-        Delectus maiores ducimus ratione, vero
-        doloremque voluptatibus debitis incidunt
-        quae corporis blanditiis assumenda dolorum
-        itaque aspernatur fugit corrupti, consectetur
-        similique.
-
-        Labore porro mollitia in sunt corporis
-        necessitatibus fuga nemo! Perspiciatis, dolore!"</string>
+    <string name="sevendesc" tools:ignore="MissingTranslation">" !"</string>
 
 
 
