@@ -2,6 +2,7 @@ package com.autismagraduation.dermatologist.ui.onboarding
 
 import android.content.Context
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -103,12 +104,12 @@ class OnboardFragment : Fragment() {
                 position++
                 onboardingViewPager.currentItem = position
             }
-            if(position == onboardingViewPager.size + 1){
+            if(position == 7){
                 onBoardingFinished()
                 findNavController().navigate(
                     R.id.action_onboardFragment_to_login)
             }
-
+            Log.d("position","$position");
         }
 
         tabLayout.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {

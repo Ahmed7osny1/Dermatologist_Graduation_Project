@@ -1,5 +1,6 @@
 package com.autismagraduation.dermatologist.ui.enterapp
 
+import android.content.Context
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
@@ -54,6 +55,8 @@ class LoginFragment : Fragment() {
                             Toast.LENGTH_LONG
                         ).show()
 
+                        LoginFinished(loginResponse?.token);
+
                         Navigation.findNavController(requireView()).navigate(
                             R.id.action_login_to_enterActivity)
                     }
@@ -70,8 +73,22 @@ class LoginFragment : Fragment() {
         }
         binding.Register.setOnClickListener {
             Navigation.findNavController(requireView()).navigate(
-                R.id.action_login_to_register)
+                R.id.action_login_to_register
+            )
         }
+        binding.forgetPassword.setOnClickListener {
+            Navigation.findNavController(requireView()).navigate(
+                R.id.action_login_to_forgetPasswordFragment
+            )
+        }
+    }
+
+    private fun LoginFinished(userToken: String?){
+        val sharedPref = requireActivity().getSharedPreferences(
+            "test", Context.MODE_PRIVATE)
+        val editor = sharedPref.edit()
+        editor.putString("token", userToken)
+        editor.apply()
     }
 
 }

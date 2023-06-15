@@ -26,19 +26,10 @@ class SplashFragment : Fragment() {
 
         Handler().postDelayed({
 
-            /*if(checkLoggedIn()){
-                val prefs = requireActivity().getSharedPreferences(
-                    "test",
-                    AppCompatActivity.MODE_PRIVATE
-                )
-                val type = prefs.getString("type", null)
-                if(type == "logged") {
-                    findNavController().navigate(R.id.action_splashFragment_to_enterActivity)
-                }else{
-                    findNavController().navigate(R.id.action_onboardFragment_to_login)
-                }
+            if(checkLoggedIn()){
+                findNavController().navigate(R.id.action_splashFragment_to_enterActivity)
             }
-            else */if(onBoardingFinished()){
+            else if(onBoardingFinished()){
                 findNavController().navigate(R.id.action_splashFragment_to_login)
             }else{
                 findNavController().navigate(R.id.action_splashFragment_to_onboardFragment)
@@ -48,19 +39,20 @@ class SplashFragment : Fragment() {
     }
 
     private fun onBoardingFinished(): Boolean{
-        val sharedPref = requireActivity().getSharedPreferences("onBoarding",
+        val sharedPref = requireActivity().getSharedPreferences(
+            "onBoarding",
             Context.MODE_PRIVATE)
         return sharedPref.getBoolean("Finished", false)
     }
 
-    /*private fun checkLoggedIn() : Boolean{
+    private fun checkLoggedIn() : Boolean{
         // check if user is logged in
         val prefs = requireActivity().getSharedPreferences(
-            MyConfig.SHARED_PREFS_FILENAME,
+            "test",
             AppCompatActivity.MODE_PRIVATE
         )
         prefs.getString("token", null) ?: return false
         return true
-    }*/
+    }
 
 }
