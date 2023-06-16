@@ -11,7 +11,7 @@
     <RelativeLayout
         android:id="@+id/relative_img"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="210dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
@@ -26,7 +26,7 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_marginStart="100dp"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="7dp"
             android:layout_marginEnd="100dp"
             android:foregroundGravity="center"
             android:indeterminateOnly="false"
@@ -35,7 +35,7 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:progress="80" />
+            tools:progress="99" />
 
         <TextView
             android:id="@+id/text_view_progress0"
@@ -50,7 +50,7 @@
             android:layout_marginEnd="50dp"
             android:layout_marginBottom="67dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            tools:text="80%" />
+            tools:text="99%" />
 
 
     </RelativeLayout>
@@ -59,7 +59,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="205dp"
+        android:layout_marginTop="220dp"
         android:layout_marginEnd="20dp"
         android:layout_alignTop="@+id/relative_img">
 
@@ -78,10 +78,10 @@
                     android:id="@+id/model1"
                     android:layout_width="355dp"
                     android:layout_height="100dp"
-                    android:backgroundTint="@color/card_color"
+                    android:backgroundTint="#E0BB85"
                     app:cardCornerRadius="30dp"
                     app:cardElevation="3dp"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="8dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textView6">
@@ -98,7 +98,7 @@
                         app:layout_constraintLeft_toLeftOf="parent"
                         app:layout_constraintRight_toRightOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        tools:progress="60" />
+                        tools:progress="99" />
 
                     <TextView
                         android:id="@+id/text_view_progress1"
@@ -109,32 +109,72 @@
                         app:layout_constraintEnd_toEndOf="@+id/progress_bar"
                         app:layout_constraintStart_toStartOf="@+id/progress_bar"
                         app:layout_constraintTop_toTopOf="@+id/progress_bar"
-                        tools:text="60%"
+                        tools:text="99%"
                         android:layout_marginTop="32dp"
                         android:layout_marginStart="25dp" />
 
 
                     <TextView
-                        android:layout_width="180dp"
+                        android:id="@+id/model1text"
+                        android:layout_width="250dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="165dp"
-                        android:layout_marginTop="35dp"
+                        android:layout_marginStart="80dp"
+                        android:gravity="center"
+                        android:layout_marginTop="15dp"
                         android:fontFamily="monospace"
-                        android:text="Model 1"
+                        android:text="Acne"
                         android:textColor="@color/first_color"
-                        android:textSize="25sp"
+                        android:textSize="22sp"
                         android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:id="@+id/info1"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="80dp"
+                        android:gravity="center"
+                        android:layout_marginTop="45dp"
+                        android:fontFamily="monospace"
+                        android:text="Some Info"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/description1"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="145dp"
+                        android:layout_marginTop="70dp"
+                        android:fontFamily="monospace"
+                        android:text="Description"
+                        android:textColor="@color/first_color"
+                        android:textSize="20sp"
+                        android:textStyle="bold|italic" />
+
+                    <ImageView
+                        android:id="@+id/goBtn1"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="280dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:padding="10dp"
+                        android:src="@drawable/baseline_keyboard_arrow_right_24" />
 
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/model2"
+                    android:id="@+id/dmodel2"
                     android:layout_width="355dp"
                     android:layout_height="100dp"
-                    android:backgroundTint="@color/card_color"
+                    android:backgroundTint="#E0BB85"
                     app:cardCornerRadius="30dp"
                     app:cardElevation="3dp"
-                    android:layout_marginTop="15dp"
+                    android:layout_marginTop="20dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textView6">
@@ -151,7 +191,7 @@
                         app:layout_constraintLeft_toLeftOf="parent"
                         app:layout_constraintRight_toRightOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        tools:progress="20" />
+                        tools:progress="81" />
 
                     <TextView
                         android:id="@+id/text_view_progress2"
@@ -162,20 +202,63 @@
                         app:layout_constraintEnd_toEndOf="@+id/progress_bar"
                         app:layout_constraintStart_toStartOf="@+id/progress_bar"
                         app:layout_constraintTop_toTopOf="@+id/progress_bar"
-                        tools:text="20%"
+                        tools:text="81%"
                         android:layout_marginTop="32dp"
                         android:layout_marginStart="25dp" />
 
                     <TextView
-                        android:layout_width="180dp"
+                        android:id="@+id/model2text"
+                        android:layout_width="250dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="165dp"
-                        android:layout_marginTop="35dp"
+                        android:layout_marginStart="80dp"
+                        android:gravity="center"
+                        android:layout_marginTop="15dp"
                         android:fontFamily="monospace"
-                        android:text="Model 2"
+                        android:text="Systemic Disease"
                         android:textColor="@color/first_color"
-                        android:textSize="25sp"
+                        android:textSize="22sp"
                         android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:id="@+id/info2"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="80dp"
+                        android:gravity="center"
+                        android:layout_marginTop="45dp"
+                        android:fontFamily="monospace"
+                        android:text="Some Info"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/description2"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="80dp"
+                        android:gravity="center"
+                        android:layout_marginTop="70dp"
+                        android:fontFamily="monospace"
+                        android:text="Description"
+                        android:textColor="@color/first_color"
+                        android:textSize="20sp"
+                        android:textStyle="bold|italic" />
+
+
+                    <ImageView
+                        android:id="@+id/goBtn2"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="280dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:padding="10dp"
+                        android:src="@drawable/baseline_keyboard_arrow_right_24" />
+
 
                 </androidx.cardview.widget.CardView>
 
@@ -183,10 +266,10 @@
                     android:id="@+id/model3"
                     android:layout_width="355dp"
                     android:layout_height="100dp"
-                    android:backgroundTint="@color/card_color"
+                    android:backgroundTint="#E0BB85"
                     app:cardCornerRadius="30dp"
                     app:cardElevation="3dp"
-                    android:layout_marginTop="15dp"
+                    android:layout_marginTop="20dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textView6">
@@ -203,7 +286,7 @@
                         app:layout_constraintLeft_toLeftOf="parent"
                         app:layout_constraintRight_toRightOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        tools:progress="10" />
+                        tools:progress="60" />
 
                     <TextView
                         android:id="@+id/text_view_progress3"
@@ -214,20 +297,62 @@
                         app:layout_constraintEnd_toEndOf="@+id/progress_bar"
                         app:layout_constraintStart_toStartOf="@+id/progress_bar"
                         app:layout_constraintTop_toTopOf="@+id/progress_bar"
-                        tools:text="10%"
+                        tools:text="60%"
                         android:layout_marginTop="32dp"
                         android:layout_marginStart="25dp" />
 
                     <TextView
-                        android:layout_width="180dp"
+                        android:id="@+id/model3text"
+                        android:layout_width="250dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="165dp"
-                        android:layout_marginTop="35dp"
+                        android:layout_marginStart="80dp"
+                        android:gravity="center"
+                        android:layout_marginTop="15dp"
                         android:fontFamily="monospace"
-                        android:text="Model 3"
+                        android:text="Warts Molluscum"
                         android:textColor="@color/first_color"
-                        android:textSize="25sp"
+                        android:textSize="22sp"
                         android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:id="@+id/info3"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="80dp"
+                        android:gravity="center"
+                        android:layout_marginTop="45dp"
+                        android:fontFamily="monospace"
+                        android:text="Some Info"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/description3"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="80dp"
+                        android:gravity="center"
+                        android:layout_marginTop="70dp"
+                        android:fontFamily="monospace"
+                        android:text="Description"
+                        android:textColor="@color/first_color"
+                        android:textSize="20sp"
+                        android:textStyle="bold|italic" />
+
+                    <ImageView
+                        android:id="@+id/goBtn3"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="280dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:padding="10dp"
+                        android:src="@drawable/baseline_keyboard_arrow_right_24" />
+
 
                 </androidx.cardview.widget.CardView>
 
@@ -235,10 +360,10 @@
                     android:id="@+id/model4"
                     android:layout_width="355dp"
                     android:layout_height="100dp"
-                    android:backgroundTint="@color/card_color"
+                    android:backgroundTint="#E0BB85"
                     app:cardCornerRadius="30dp"
                     app:cardElevation="3dp"
-                    android:layout_marginTop="15dp"
+                    android:layout_marginTop="20dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textView6">
@@ -255,7 +380,7 @@
                         app:layout_constraintLeft_toLeftOf="parent"
                         app:layout_constraintRight_toRightOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        tools:progress="7" />
+                        tools:progress="44" />
 
                     <TextView
                         android:id="@+id/text_view_progress4"
@@ -266,22 +391,87 @@
                         app:layout_constraintEnd_toEndOf="@+id/progress_bar"
                         app:layout_constraintStart_toStartOf="@+id/progress_bar"
                         app:layout_constraintTop_toTopOf="@+id/progress_bar"
-                        tools:text="7%"
+                        tools:text="44%"
                         android:layout_marginTop="32dp"
                         android:layout_marginStart="25dp" />
 
                     <TextView
-                        android:layout_width="180dp"
+                        android:id="@+id/model4text"
+                        android:layout_width="250dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="165dp"
-                        android:layout_marginTop="35dp"
+                        android:layout_marginStart="80dp"
+                        android:gravity="center"
+                        android:layout_marginTop="15dp"
                         android:fontFamily="monospace"
-                        android:text="Model 4"
+                        android:text="Versicolor"
                         android:textColor="@color/first_color"
-                        android:textSize="25sp"
+                        android:textSize="22sp"
                         android:textStyle="bold|italic" />
 
+                    <TextView
+                        android:id="@+id/info4"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="80dp"
+                        android:gravity="center"
+                        android:layout_marginTop="45dp"
+                        android:fontFamily="monospace"
+                        android:text="Some Info"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/description4"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="80dp"
+                        android:gravity="center"
+                        android:layout_marginTop="70dp"
+                        android:fontFamily="monospace"
+                        android:text="Description"
+                        android:textColor="@color/first_color"
+                        android:textSize="20sp"
+                        android:textStyle="bold|italic" />
+
+                    <ImageView
+                        android:id="@+id/goBtn4"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="280dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:padding="10dp"
+                        android:src="@drawable/baseline_keyboard_arrow_right_24" />
+
+
+
                 </androidx.cardview.widget.CardView>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/newcheck"
+                    android:layout_width="match_parent"
+                    android:layout_height="53dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_btn"
+                    android:text="New Check"
+                    android:layout_gravity="center"
+                    android:textStyle="italic"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:padding="5dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginBottom="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:ignore="MissingConstraints" />
 
 
             </LinearLayout>
