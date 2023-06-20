@@ -6,8 +6,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.autismagraduation.pharmacy.R
+import com.autismagraduation.pharmacy.databinding.FragmentSplashBinding
 
 class SplashFragment : Fragment() {
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

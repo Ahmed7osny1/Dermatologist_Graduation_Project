@@ -27,7 +27,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="35dp"
-                android:text="Derma\nKeep your skin clear"
+                android:text="@string/derma_nkeep_your_skin_clear"
                 android:textSize="30sp"
                 android:textStyle="bold|italic"
                 android:textColor="@color/first_color"
@@ -161,7 +161,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginTop="40dp"
-                        android:text="Medicines"
+                        android:text="@string/medicines"
                         android:textColor="#7A3F0F"
                         android:textSize="25sp"
                         android:textStyle="bold" />
@@ -174,7 +174,7 @@
                         android:layout_marginTop="80dp"
                         android:layout_marginEnd="10dp"
                         android:gravity="center"
-                        android:text="You can get Medicines for all skin types."
+                        android:text="@string/you_can_get_medicines_for_all_skin_types"
                         android:textColor="@color/first_color"
                         android:textSize="15sp" />
 
@@ -203,7 +203,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginTop="40dp"
-                        android:text="Skincare"
+                        android:text="@string/skincare"
                         android:textColor="#7A3F0F"
                         android:textSize="25sp"
                         android:textStyle="bold" />
@@ -216,7 +216,7 @@
                         android:layout_marginTop="80dp"
                         android:layout_marginEnd="10dp"
                         android:gravity="center"
-                        android:text="You can get Skincare for Maintaining skin integrity."
+                        android:text="@string/you_can_get_skincare_for_maintaining_skin_integrity"
                         android:textColor="@color/first_color"
                         android:textSize="15sp" />
 
@@ -246,7 +246,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginTop="40dp"
-                        android:text="Herbs"
+                        android:text="@string/herbs"
                         android:textColor="#7A3F0F"
                         android:textSize="25sp"
                         android:textStyle="bold" />
@@ -259,7 +259,7 @@
                         android:layout_marginTop="80dp"
                         android:layout_marginEnd="10dp"
                         android:gravity="center"
-                        android:text="You can get Useful herbs for skin care."
+                        android:text="@string/you_can_get_useful_herbs_for_skin_care"
                         android:textColor="@color/first_color"
                         android:textSize="15sp" />
 

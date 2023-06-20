@@ -2,11 +2,11 @@
     <string name="app_name">Dermatologist</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
-    <string name="hi_there" translatable="false">HI, THERE !</string>
-    <string name="save_your_skin" translatable="false">Save your skin</string>
-    <string name="we_will_help_nyou_diagnose_na_skin_disease" translatable="false">We  will  help\nyou  diagnose\na skin  disease</string>
-    <string name="check" translatable="false">Check</string>
-    <string name="categories" translatable="false">TOP CATEGORIES</string>
+    <string name="hi_there">HI, THERE !</string>
+    <string name="save_your_skin">Save your skin</string>
+    <string name="we_will_help_nyou_diagnose_na_skin_disease">We  will  help\nyou  diagnose\na skin  disease</string>
+    <string name="check">Check</string>
+    <string name="categories">TOP CATEGORIES</string>
     <string name="welcome">welcome</string>
     <string name="back">Back!</string>
 
@@ -70,5 +70,43 @@ duration varies from city to city ,Traffic
     <string name="send" tools:ignore="MissingTranslation">Send</string>
 
     <string name="enter_your_email_address_associated_with_your_account" tools:ignore="MissingTranslation">Enter Your Email Address Associated With Your Account.</string>
+    <string name="hey_again" tools:ignore="MissingTranslation">Hey! Good to see you again.</string>
+    <string name="mail" tools:ignore="MissingTranslation">Email</string>
+    <string name="pass" tools:ignore="MissingTranslation">Password</string>
+    <string name="forget_pass" tools:ignore="MissingTranslation">Forget Password?</string>
+    <string name="signin" tools:ignore="MissingTranslation">Login</string>
+    <string name="don_t_have_account" tools:ignore="MissingTranslation">Don’t Have Account?</string>
+    <string name="new_password" tools:ignore="MissingTranslation">New Password</string>
+    <string name="sign_up" tools:ignore="MissingTranslation">Sign up</string>
+    <string name="we_are_happy_to_see_you_here" tools:ignore="MissingTranslation">We are happy to see you here!</string>
+    <string name="first_name" tools:ignore="MissingTranslation">First Name</string>
+    <string name="last_name" tools:ignore="MissingTranslation">Last Name</string>
+    <string name="emai" tools:ignore="MissingTranslation">Email</string>
+    <string name="passwo" tools:ignore="MissingTranslation">Password</string>
+    <string name="confirm_password" tools:ignore="MissingTranslation">Confirm Password</string>
+    <string name="phone_number" tools:ignore="MissingTranslation">Phone Number</string>
+    <string name="address" tools:ignore="MissingTranslation">Address</string>
+    <string name="register" tools:ignore="MissingTranslation">Register</string>
+    <string name="pay_egp19_52_using" tools:ignore="MissingTranslation">Pay EGP19,52 using</string>
+    <string name="card_information" tools:ignore="MissingTranslation">Card information</string>
+    <string name="card_number" tools:ignore="MissingTranslation">Card number</string>
+    <string name="mm_yy" tools:ignore="MissingTranslation">MM / YY</string>
+    <string name="cvc" tools:ignore="MissingTranslation">CVC</string>
+    <string name="country_or_region" tools:ignore="MissingTranslation">Country or region</string>
+    <string name="country" tools:ignore="MissingTranslation">Country</string>
+    <string name="zip" tools:ignore="MissingTranslation">ZIP</string>
+    <string name="pay_egp19_52" tools:ignore="MissingTranslation">Pay EGP19.52</string>
+    <string name="derma_nkeep_your_skin_clear" tools:ignore="MissingTranslation">Derma\nKeep your skin clear</string>
+    <string name="medicines" tools:ignore="MissingTranslation">Medicines</string>
+    <string name="you_can_get_medicines_for_all_skin_types" tools:ignore="MissingTranslation">You can get Medicines for all skin types.</string>
+    <string name="skincare" tools:ignore="MissingTranslation">Skincare</string>
+    <string name="you_can_get_skincare_for_maintaining_skin_integrity" tools:ignore="MissingTranslation">You can get Skincare for Maintaining skin integrity.</string>
+    <string name="herbs" tools:ignore="MissingTranslation">Herbs</string>
+    <string name="you_can_get_useful_herbs_for_skin_care" tools:ignore="MissingTranslation">You can get Useful herbs for skin care.</string>
+    <string name="click_on_the_camera_to_n_take_or_upload_image" tools:ignore="MissingTranslation">Click on the camera to \n Take or Upload Image</string>
+    <string name="result" tools:ignore="MissingTranslation">Result</string>
+    <string name="next" tools:ignore="MissingTranslation">Next</string>
+    <string name="pay_egp" tools:ignore="MissingTranslation">Pay EGP19.52</string>
+    <string name="account_info">Account Info</string>
 
 </resources>

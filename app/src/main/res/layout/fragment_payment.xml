@@ -15,7 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="55dp"
         android:backgroundTint="#873600"
-        android:text="Pay EGP19.52"
+        android:text="@string/pay_egp"
         android:textColor="@color/white"
         android:layout_margin="20dp"
         android:textSize="18sp"
