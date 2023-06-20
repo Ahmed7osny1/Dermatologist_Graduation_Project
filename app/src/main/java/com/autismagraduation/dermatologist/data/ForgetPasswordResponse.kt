@@ -1,6 +1,6 @@
 package com.autismagraduation.dermatologist.data
 
-data class LoginResponse(
+data class ForgetPasswordResponse(
     val success: Boolean,
-    val token: String
+    val message: String
 )

@@ -57,8 +57,8 @@ class RegisterFragment : Fragment() {
                         phone_number = phone,
                         address = address
                     )
-                )
-                    .enqueue(object : Callback<RegisterResponse> {
+                ).enqueue(object : Callback<RegisterResponse> {
+
                         override fun onResponse(
                             call: Call<RegisterResponse>,
                             response: Response<RegisterResponse>

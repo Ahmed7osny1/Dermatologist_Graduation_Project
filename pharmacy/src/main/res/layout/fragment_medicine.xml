@@ -5,21 +5,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/back_color"
-    tools:context=".ui.homeFragment">
+    tools:context=".ui.MedicineFragment">
 
-    <com.denzcoskun.imageslider.ImageSlider
-        android:id="@+id/image_slider"
-        android:layout_width="wrap_content"
-        android:layout_height="250dp"
-        app:iss_auto_cycle="true"
-        app:iss_delay="3000"
-        app:iss_period="2000"
-        app:iss_text_align="CENTER"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/medicine_recycleView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingClass" />
-
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

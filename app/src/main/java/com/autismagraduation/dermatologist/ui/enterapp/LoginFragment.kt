@@ -3,11 +3,11 @@ package com.autismagraduation.dermatologist.ui.enterapp
 import android.content.Context
 import android.os.Bundle
 import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
 import com.autismagraduation.dermatologist.R
 import com.autismagraduation.dermatologist.data.*
@@ -19,7 +19,8 @@ import retrofit2.Response
 class LoginFragment : Fragment() {
 
     private lateinit var binding: FragmentLoginBinding
-
+    private lateinit var email: String
+    private lateinit var password: String
     private lateinit var apiClient: ApiClient
 
     override fun onCreateView(
@@ -37,10 +38,12 @@ class LoginFragment : Fragment() {
 
         binding.logIn.setOnClickListener {
 
+            checkLogin();
+
             apiClient.getApiService().login(
                 LoginRequest(
-                    "ahmedhosny6688@gmail.com",
-                    "12345678"
+                    email,
+                    password
                 )
             )
                 .enqueue(object : Callback<LoginResponse> {
@@ -49,16 +52,19 @@ class LoginFragment : Fragment() {
                         response: Response<LoginResponse>
                     ) {
                         val loginResponse = response.body()
-                        Log.d("Auth", "${loginResponse?.login} + ${loginResponse?.token}");
-                        Toast.makeText(
-                            requireContext(), loginResponse?.token,
-                            Toast.LENGTH_LONG
-                        ).show()
+                        Log.d("Auth", "${loginResponse?.success} + ${loginResponse?.token}");
+                        if(loginResponse?.success == true) {
+                            Toast.makeText(
+                                requireContext(), "Login successfully",
+                                Toast.LENGTH_LONG
+                            ).show()
 
-                        LoginFinished(loginResponse?.token);
+                            LoginFinished(loginResponse.token);
 
-                        Navigation.findNavController(requireView()).navigate(
-                            R.id.action_login_to_enterActivity)
+                            Navigation.findNavController(requireView()).navigate(
+                                R.id.action_login_to_enterActivity
+                            )
+                        }
                     }
                     override fun onFailure(call: Call<LoginResponse>,
                                            t: Throwable) {
@@ -89,6 +95,22 @@ class LoginFragment : Fragment() {
         val editor = sharedPref.edit()
         editor.putString("token", userToken)
         editor.apply()
+    }
+
+    private fun checkLogin(): Boolean {
+        email = binding.email.editText!!.text.toString()
+        password = binding.password.editText!!.text.toString()
+        if (email.isEmpty() || password.isEmpty()) {
+            if (email.isEmpty()) Toast.makeText(
+                requireActivity(), "Please Enter Email",
+                Toast.LENGTH_LONG
+            ).show()
+            if (password.isEmpty()) Toast.makeText(
+                requireActivity(), "Please Enter your Password",
+                Toast.LENGTH_LONG
+            ).show()
+        } else return true
+        return false
     }
 
 }

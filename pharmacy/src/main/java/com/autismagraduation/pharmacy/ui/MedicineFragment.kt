@@ -1,4 +1,4 @@
-package com.autismagraduation.dermatologist.ui.appscreen
+package com.autismagraduation.pharmacy.ui
 
 import android.os.Bundle
 import android.util.Log
@@ -9,20 +9,16 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
-import com.autismagraduation.dermatologist.adapter.MedicineAdapter
-import com.autismagraduation.dermatologist.adapter.OfferAdapter
-import com.autismagraduation.dermatologist.data.ApiClient
-import com.autismagraduation.dermatologist.data.DataX
-import com.autismagraduation.dermatologist.data.MedicineDataX
-import com.autismagraduation.dermatologist.databinding.FragmentOfferBinding
+import com.autismagraduation.pharmacy.data.ApiClient
+import com.autismagraduation.pharmacy.databinding.FragmentMedicineBinding
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class OfferFragment : Fragment() {
+class MedicineFragment : Fragment() {
 
-    private lateinit var myArray: ArrayList<DataX>
-    private lateinit var binding: FragmentOfferBinding
+    //private lateinit var myArray: ArrayList<DataX>
+    private lateinit var binding: FragmentMedicineBinding
     private lateinit var apiClient: ApiClient
 
     override fun onCreateView(
@@ -30,7 +26,7 @@ class OfferFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         // Inflate the layout for this fragment
-        binding = FragmentOfferBinding.inflate(inflater, container, false)
+        binding = FragmentMedicineBinding.inflate(inflater, container, false)
         apiClient = ApiClient()
         return binding.root
     }
@@ -39,8 +35,10 @@ class OfferFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
 
-        binding.offerRecycleView.layoutManager = StaggeredGridLayoutManager(2,
-            LinearLayoutManager.VERTICAL)
+        binding.medicineRecycleView.layoutManager = StaggeredGridLayoutManager(
+            2,
+            LinearLayoutManager.VERTICAL
+        )
 
         getData()
 
@@ -48,42 +46,41 @@ class OfferFragment : Fragment() {
 
     private fun getData() {
 
-        myArray = arrayListOf<DataX>()
+       /* myArray = arrayListOf<DataX>()
 
-        apiClient.getApiService().getOffer().enqueue(object: Callback<MedicineDataX> {
+        apiClient.getApiService().getMedicine().enqueue(object : Callback<MedicineDataX> {
             override fun onResponse(call: Call<MedicineDataX>, response: Response<MedicineDataX>) {
 
-                val offerResponse = response.body()
+                val medicineResponse = response.body()
 
-                Log.d("Auth", "${offerResponse?.success} + ${offerResponse?.data}")
+                Log.d("Auth", "${medicineResponse?.success} + ${medicineResponse?.data}")
 
-                if (offerResponse != null) {
-                    myArray.addAll(offerResponse.data)
+                if (medicineResponse != null) {
+                    myArray.addAll(medicineResponse.data)
                 }
                 Log.d("Auth", "${myArray}")
 
-                val adapter = OfferAdapter(myArray)
-                binding.offerRecycleView.adapter = adapter
+                val adapter = MedicineAdapter(myArray)
+                binding.medicineRecycleView.adapter = adapter
 
-                adapter.setonItemClickListener(object : OfferAdapter.onItemClickListener {
+                adapter.setonItemClickListener(object : MedicineAdapter.onItemClickListener {
                     override fun bookAction(position: Int) {
                         Toast.makeText(requireContext(), "$position", Toast.LENGTH_LONG).show()
                     }
 
                 })
+
             }
 
             override fun onFailure(call: Call<MedicineDataX>, t: Throwable) {
                 // Error logging in
                 Log.d("Auth", "${t.message}");
-                Toast.makeText(requireContext(), "${t.message}",
+                Toast.makeText(
+                    requireContext(), "${t.message}",
                     Toast.LENGTH_LONG
                 ).show()
             }
 
-        })
-
+        })*/
     }
-
-
 }

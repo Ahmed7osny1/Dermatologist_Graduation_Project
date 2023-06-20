@@ -1,9 +1,8 @@
-package com.autismagraduation.dermatologist.`object`
+package com.autismagraduation.pharmacy.`object`
 
 object Constants {
     // Endpoints
     const val BASE_URL = "https://dermaproject-production.up.railway.app/"
-    const val BASE_IMG = "https://dermaproject-production.up.railway.app"
     const val LOGIN_URL = "api/user/login/"
     const val Register_URL = "api/user/register/"
     const val Forget_URL = "api/user/forgetPassword/"

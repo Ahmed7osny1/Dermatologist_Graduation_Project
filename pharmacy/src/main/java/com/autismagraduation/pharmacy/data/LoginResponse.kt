@@ -1,4 +1,4 @@
-package com.autismagraduation.dermatologist.data
+package com.autismagraduation.pharmacy.data
 
 data class LoginResponse(
     val success: Boolean,

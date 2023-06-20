@@ -22,7 +22,7 @@
         android:title="Profile" />
 
     <item
-        android:id="@+id/mainActivity"
+        android:id="@+id/logout"
         android:icon="@drawable/ic_logout"
         android:title="Log Out" />
 

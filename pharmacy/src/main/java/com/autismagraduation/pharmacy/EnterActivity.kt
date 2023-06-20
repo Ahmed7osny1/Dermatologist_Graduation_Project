@@ -1,4 +1,4 @@
-package com.autismagraduation.dermatologist
+package com.autismagraduation.pharmacy
 
 import android.content.Intent
 import android.content.SharedPreferences

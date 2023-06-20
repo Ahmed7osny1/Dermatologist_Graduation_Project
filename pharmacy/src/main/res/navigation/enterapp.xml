@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/enterapp"
-    app:startDestination="@id/homeFragment">
+    app:startDestination="@id/splashFragment">
     <fragment
         android:id="@+id/splashFragment"
         android:name="com.autismagraduation.pharmacy.ui.SplashFragment"
@@ -20,9 +20,9 @@
             app:popUpTo="@id/loginFragment"
             app:popUpToInclusive="true" />
         <action
-            android:id="@+id/action_splashFragment_to_homeFragment"
-            app:destination="@id/homeFragment"
-            app:popUpTo="@id/homeFragment"
+            android:id="@+id/action_splashFragment_to_enterActivity"
+            app:destination="@id/enterActivity"
+            app:popUpTo="@id/enterActivity"
             app:popUpToInclusive="true" />
     </fragment>
     <fragment
@@ -45,13 +45,13 @@
             android:id="@+id/action_loginFragment_to_registerFragment"
             app:destination="@id/registerFragment" />
         <action
-            android:id="@+id/action_loginFragment_to_homeFragment"
-            app:destination="@id/homeFragment"
-            app:popUpTo="@id/homeFragment"
-            app:popUpToInclusive="true" />
-        <action
             android:id="@+id/action_loginFragment_to_forgetPasswordFragment"
             app:destination="@id/forgetPasswordFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_enterActivity"
+            app:destination="@id/enterActivity"
+            app:popUpTo="@id/enterapp"
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/registerFragment"
@@ -59,18 +59,13 @@
         android:label="fragment_register"
         tools:layout="@layout/fragment_register" />
     <fragment
-        android:id="@+id/homeFragment"
-        android:name="com.autismagraduation.pharmacy.homeFragment"
-        android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
-    <fragment
         android:id="@+id/forgetPasswordFragment"
         android:name="com.autismagraduation.pharmacy.ui.ForgetPasswordFragment"
         android:label="fragment_forget_password"
         tools:layout="@layout/fragment_forget_password" />
-    <fragment
-        android:id="@+id/subscriptionFragment"
-        android:name="com.autismagraduation.pharmacy.ui.SubscriptionFragment"
-        android:label="fragment_subscription"
-        tools:layout="@layout/fragment_subscription" />
+    <activity
+        android:id="@+id/enterActivity"
+        android:name="com.autismagraduation.pharmacy.EnterActivity"
+        android:label="activity_enter"
+        tools:layout="@layout/activity_enter" />
 </navigation>
