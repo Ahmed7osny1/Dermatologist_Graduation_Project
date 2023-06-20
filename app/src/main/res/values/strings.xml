@@ -116,7 +116,10 @@ duration varies from city to city ,Traffic
     <string name="your_email" tools:ignore="MissingTranslation">your Email</string>
     <string name="addressssss" tools:ignore="MissingTranslation">Address</string>
     <string name="your_address" tools:ignore="MissingTranslation">your Address</string>
-
+    <string name="normal_skin" tools:ignore="MissingTranslation">Normal Skin</string>
+    <string name="dry_skin" tools:ignore="MissingTranslation">Dry Skin</string>
+    <string name="oily_skin" tools:ignore="MissingTranslation">Oily Skin</string>
+    <string name="combination_n_skin">Combination Skin</string>
 
 
 </resources>

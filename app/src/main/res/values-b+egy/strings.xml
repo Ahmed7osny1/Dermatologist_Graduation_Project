@@ -73,4 +73,8 @@
     <string name="your_email">بريدك الالكتروني</string>
     <string name="addressssss">عنوان</string>
     <string name="your_address">عنوانك</string>
+    <string name="normal_skin">بشرة عادية</string>
+    <string name="dry_skin">بشرة جافة</string>
+    <string name="oily_skin">بشرة دهنية</string>
+    <string name="combination_n_skin">البشرة المختلطة</string>
 </resources>
