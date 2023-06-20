@@ -1,7 +1,7 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Dermatologist</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="hi_there">HI, THERE !</string>
     <string name="save_your_skin">Save your skin</string>
     <string name="we_will_help_nyou_diagnose_na_skin_disease">We  will  help\nyou  diagnose\na skin  disease</string>
@@ -107,6 +107,16 @@ duration varies from city to city ,Traffic
     <string name="result" tools:ignore="MissingTranslation">Result</string>
     <string name="next" tools:ignore="MissingTranslation">Next</string>
     <string name="pay_egp" tools:ignore="MissingTranslation">Pay EGP19.52</string>
-    <string name="account_info">Account Info</string>
+    <string name="account_info" tools:ignore="MissingTranslation">Account Info</string>
+    <string name="name">Name</string>
+    <string name="your_name" tools:ignore="MissingTranslation">your name</string>
+    <string name="mobile" tools:ignore="MissingTranslation">Mobile</string>
+    <string name="your_phone" tools:ignore="MissingTranslation">your phone</string>
+    <string name="maiilll" tools:ignore="MissingTranslation">Email</string>
+    <string name="your_email" tools:ignore="MissingTranslation">your Email</string>
+    <string name="addressssss" tools:ignore="MissingTranslation">Address</string>
+    <string name="your_address" tools:ignore="MissingTranslation">your Address</string>
+
+
 
 </resources>

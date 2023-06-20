@@ -63,4 +63,14 @@
     <string name="result">نتيجة</string>
     <string name="next">التالي</string>
     <string name="pay_egp">ادفع 19.52 جنيه مصري</string>
+    <string name="hello_blank_fragment">مرحبا جزء فارغ</string>
+    <string name="account_info">معلومات الحساب</string>
+    <string name="name">الاسم</string>
+    <string name="your_name">اسمك</string>
+    <string name="mobile">التليفون المحمول</string>
+    <string name="your_phone">هاتفك</string>
+    <string name="maiilll">بريد الالكتروني</string>
+    <string name="your_email">بريدك الالكتروني</string>
+    <string name="addressssss">عنوان</string>
+    <string name="your_address">عنوانك</string>
 </resources>
