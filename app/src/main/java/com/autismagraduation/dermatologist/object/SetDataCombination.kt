@@ -1,5 +1,6 @@
 package com.autismagraduation.dermatologist.`object`
 
+import com.autismagraduation.dermatologist.App
 import com.autismagraduation.dermatologist.R
 import com.autismagraduation.dermatologist.data.DataUsed
 
@@ -12,7 +13,7 @@ object SetDataCombination {
         combinationData.add(
             DataUsed(
                 R.drawable.hyalu,
-                "HYALU COLLAGEN",
+               App.getAppResources().getString(R.string.app_name),
                 "Eye Cream",
                 "\nTo moisturize the area around the eye and protect\n"+" it from wrinkles and lines resulting from the dryness of the area around the eye.\n\n"+
                         "It also helps to lighten the circles around the eye and make the area around the eye brighter, livelier, and a more youthful appearance.\n\n" +

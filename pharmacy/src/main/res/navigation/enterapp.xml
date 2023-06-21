@@ -57,7 +57,11 @@
         android:id="@+id/registerFragment"
         android:name="com.autismagraduation.pharmacy.ui.RegisterFragment"
         android:label="fragment_register"
-        tools:layout="@layout/fragment_register" />
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_uploadRegisterFragment"
+            app:destination="@id/uploadRegisterFragment" />
+    </fragment>
     <fragment
         android:id="@+id/forgetPasswordFragment"
         android:name="com.autismagraduation.pharmacy.ui.ForgetPasswordFragment"
@@ -68,4 +72,28 @@
         android:name="com.autismagraduation.pharmacy.EnterActivity"
         android:label="activity_enter"
         tools:layout="@layout/activity_enter" />
+    <fragment
+        android:id="@+id/uploadRegisterFragment"
+        android:name="com.autismagraduation.pharmacy.ui.UploadRegisterFragment"
+        android:label="fragment_upload_register"
+        tools:layout="@layout/fragment_upload_register" >
+        <action
+            android:id="@+id/action_uploadRegisterFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="email"
+            app:argType="string" />
+        <argument
+            android:name="password"
+            app:argType="string" />
+        <argument
+            android:name="phone"
+            app:argType="string" />
+        <argument
+            android:name="address"
+            app:argType="string" />
+    </fragment>
 </navigation>

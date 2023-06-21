@@ -1,6 +1,6 @@
 package com.autismagraduation.pharmacy.data
 
-import com.autismagraduation.dermatologist.interfaces.ApiService
+import com.autismagraduation.pharmacy.interfaces.ApiService
 import com.autismagraduation.pharmacy.`object`.Constants
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

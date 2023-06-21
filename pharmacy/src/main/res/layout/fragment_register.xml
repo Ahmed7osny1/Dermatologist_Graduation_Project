@@ -103,24 +103,19 @@
                 android:orientation="vertical"
                 android:padding="5dp">
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
                     <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/firstname"
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                        android:layout_width="150dp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="First Name"
                         app:startIconDrawable="@drawable/ic_baseline_person_24"
                         app:startIconTint="#512904"
                         app:endIconMode="clear_text"
                         app:endIconTint="#512904"
+                        android:layout_marginEnd="25dp"
                         android:layout_marginStart="25dp"
                         android:layout_marginTop="5dp"
-                        android:layout_marginEnd="10dp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
@@ -132,40 +127,11 @@
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/et_firstname"
-                            android:layout_width="150dp"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:inputType="text" />
                     </com.google.android.material.textfield.TextInputLayout>
 
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:id="@+id/lastname"
-                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                        android:layout_width="150dp"
-                        android:layout_height="wrap_content"
-                        android:hint="Last Name"
-                        app:startIconDrawable="@drawable/ic_baseline_person_24"
-                        app:startIconTint="#512904"
-                        app:endIconMode="clear_text"
-                        app:endIconTint="#512904"
-                        android:layout_marginEnd="25dp"
-                        android:layout_marginTop="5dp"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        tools:ignore="MissingConstraints"
-                        app:boxStrokeColor="#461F15"
-                        app:helperTextTextColor="#4D352E"
-                        android:textColorHint="#422922"
-                        app:hintTextColor="#733C10">
-
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/et_lastname"
-                            android:layout_width="150dp"
-                            android:layout_height="wrap_content"
-                            android:inputType="text" />
-                    </com.google.android.material.textfield.TextInputLayout>
-
-                </LinearLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/email"
