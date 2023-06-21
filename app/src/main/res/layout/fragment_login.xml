@@ -71,7 +71,7 @@
             android:layout_alignStart="@+id/textView1"
             android:layout_alignParentEnd="true"
             android:padding="5dp"
-            android:text="@string/hey_good_to_see_you_again"
+            android:text="@string/heygood"
             android:textColor="#B98C7E"
             android:textSize="21sp"
             android:textStyle="bold" />
