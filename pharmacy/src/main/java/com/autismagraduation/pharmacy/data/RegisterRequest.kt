@@ -1,13 +1,14 @@
 package com.autismagraduation.pharmacy.data
 
 import okhttp3.MultipartBody
+import java.io.File
 
 data class RegisterRequest(
-    val description: String,
-    val email: String,
-    val location: String,
     val name: String,
+    val email: String,
     val password: String,
-    val pharmacy_image: MultipartBody.Part,
-    val phone_number: String
+    val phone_number: String,
+    val location: String,
+    val description: String,
+    val pharmacy_image: File
 )

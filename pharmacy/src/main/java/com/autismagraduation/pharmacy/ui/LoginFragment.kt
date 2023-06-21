@@ -84,7 +84,7 @@ class LoginFragment : Fragment() {
                 R.id.action_loginFragment_to_registerFragment
             )
         }
-        binding.forgetBtn.setOnClickListener {
+        binding.forgetPassword.setOnClickListener {
             Navigation.findNavController(requireView()).navigate(
                 R.id.action_loginFragment_to_forgetPasswordFragment
             )

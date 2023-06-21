@@ -1,14 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.UploadRegisterFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="222dp"
+        android:layout_height="210dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="50dp"
+        app:cardCornerRadius="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
 
-</FrameLayout>
+        <ImageView
+            android:id="@+id/myImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/imagemain"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="-20dp"
+        android:background="@drawable/ic_baseline_camera_alt_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardview" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/description"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="20dp"
+        android:hint="Description"
+        android:maxLength="2000"
+        android:maxLines="4"
+        android:textColorHint="#422922"
+        app:boxStrokeColor="#461F15"
+        app:endIconMode="clear_text"
+        app:endIconTint="#512904"
+        app:helperTextTextColor="#4D352E"
+        app:hintTextColor="#733C10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagemain">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signupIn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        android:layout_weight="1"
+        android:background="@drawable/background_btn"
+        android:padding="5dp"
+        android:text="Finished"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

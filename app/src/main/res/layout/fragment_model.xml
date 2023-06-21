@@ -84,33 +84,6 @@
         tools:ignore="MissingConstraints" />
 
 
-
-<!--    <androidx.appcompat.widget.AppCompatButton-->
-<!--        android:id="@+id/treatment"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="50dp"-->
-<!--        android:layout_gravity="center"-->
-<!--        android:layout_marginStart="45dp"-->
-<!--        android:layout_marginTop="120dp"-->
-<!--        android:layout_marginEnd="45dp"-->
-<!--        android:layout_weight="1"-->
-<!--        android:background="@drawable/background_btn"-->
-<!--        android:padding="5dp"-->
-<!--        android:text="Suggest Treatment"-->
-<!--        android:textAllCaps="false"-->
-<!--        android:textColor="@color/white"-->
-<!--        android:textSize="30sp"-->
-<!--        android:textStyle="italic"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.0"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="@id/result"-->
-<!--        tools:ignore="MissingConstraints" />-->
-
-
-
-
-
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="300dp"
