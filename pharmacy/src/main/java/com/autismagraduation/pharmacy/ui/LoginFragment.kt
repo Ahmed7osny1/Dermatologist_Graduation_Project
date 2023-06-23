@@ -64,7 +64,7 @@ class LoginFragment : Fragment() {
                             LoginFinished(loginResponse.token);
 
                             Navigation.findNavController(requireView()).navigate(
-                                R.id.action_homeFragment_to_mainActivity
+                                R.id.action_loginFragment_to_enterActivity
                             )
                         }
                     }

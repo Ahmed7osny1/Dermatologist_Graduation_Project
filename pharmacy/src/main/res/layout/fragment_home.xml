@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,6 +7,12 @@
     android:layout_height="match_parent"
     android:background="@color/back_color"
     tools:context=".ui.homeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        >
 
     <com.denzcoskun.imageslider.ImageSlider
         android:id="@+id/image_slider"
@@ -21,5 +27,110 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingClass" />
 
+        <androidx.cardview.widget.CardView
+            android:id="@+id/service_one"
+            android:layout_width="170dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+            app:cardCornerRadius="30dp"
+            app:cardElevation="10dp"
+            app:cardPreventCornerOverlap="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_slider">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="-15dp"
+                android:text="Budget"
+                android:textColor="#296762"
+                android:textSize="23sp"
+                android:textStyle="italic|bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="0"
+                android:textColor="#296762"
+                android:textSize="23sp"
+                android:textStyle="italic|bold" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="170dp"
+            android:layout_height="100dp"
+            app:cardCornerRadius="30dp"
+            android:layout_marginTop="15sp"
+            app:cardElevation="10dp"
+            app:cardPreventCornerOverlap="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/service_one"
+            app:layout_constraintTop_toBottomOf="@+id/image_slider">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="-15dp"
+                android:text="Selling Item"
+                android:textColor="#296762"
+                android:textSize="23sp"
+                android:textStyle="italic|bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="0"
+                android:layout_marginTop="20dp"
+                android:textColor="#296762"
+                android:textSize="23sp"
+                android:textStyle="italic|bold"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/subscribe"
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="25sp"
+            android:backgroundTint="@color/card_color"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="10dp"
+            app:cardPreventCornerOverlap="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/service_one">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="50dp"
+                android:text="You Can Get More\nFeatures With\n Upgrade Account"
+                android:textColor="#296762"
+                android:textSize="23sp"
+                android:textStyle="italic|bold" />
+
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="end"
+            android:src="@drawable/upgrade"
+            />
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

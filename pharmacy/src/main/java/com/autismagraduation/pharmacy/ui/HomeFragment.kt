@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.Navigation
 import com.autismagraduation.pharmacy.R
 import com.autismagraduation.pharmacy.databinding.FragmentHomeBinding
 import com.denzcoskun.imageslider.constants.ScaleTypes
@@ -22,6 +23,16 @@ class homeFragment : Fragment() {
         imageSliderSetup()
 
         return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        binding.subscribe.setOnClickListener {
+            Navigation.findNavController(view).navigate(
+                R.id.action_homeFragment_to_subscriptionFragment
+            )
+        }
     }
 
     private fun imageSliderSetup(){

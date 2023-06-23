@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.navigation.Navigation
 import com.autismagraduation.pharmacy.R
 import com.autismagraduation.pharmacy.data.ApiClient
 import com.autismagraduation.pharmacy.data.ForgetPasswordRequest
@@ -56,6 +57,8 @@ class ForgetPasswordFragment : Fragment() {
                         requireContext(), ForgetPasswordResponse?.message,
                         Toast.LENGTH_LONG
                     ).show()
+
+                    Navigation.findNavController(view).navigate(R.id.action_forgetPasswordFragment_to_loginFragment)
                 }
 
                 override fun onFailure(call: Call<ForgetPasswordResponse>, t: Throwable) {

@@ -3,13 +3,17 @@ package com.autismagraduation.pharmacy.ui
 import android.Manifest
 import android.app.Activity
 import android.app.AlertDialog
+import android.content.Context
 import android.content.DialogInterface
 import android.content.Intent
 import android.content.pm.PackageManager
+import android.database.Cursor
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.net.Uri
 import android.os.Bundle
+import android.os.Environment
+import android.provider.DocumentsContract
 import android.provider.MediaStore
 import android.util.Log
 import androidx.fragment.app.Fragment
@@ -32,6 +36,7 @@ import okhttp3.RequestBody
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import java.io.ByteArrayOutputStream
 import java.io.File
 import java.io.FileOutputStream
 import java.io.InputStream
@@ -42,6 +47,7 @@ class UploadRegisterFragment : Fragment() {
     private var optionMenu = arrayOf<String>("Take photo","Choose from gallery","Exit")
     private var bitmap: Bitmap? = null
     private var uri: Uri? = null
+    private var imagePart: MultipartBody.Part? = null
     private var inputStream: InputStream? = null
     private lateinit var binding: FragmentUploadRegisterBinding
     private lateinit var discription: String
@@ -96,10 +102,12 @@ class UploadRegisterFragment : Fragment() {
             }
         }
 
+        discription = binding.description.editText?.text.toString()
+
         binding.signupIn.setOnClickListener {
 
             if (createAccount()){
-                Log.d("image","${uploadPicture()}")
+                Log.d("image","${imagePart}")
 
                 apiClient.getApiService().register(
                     RegisterRequest(
@@ -109,7 +117,7 @@ class UploadRegisterFragment : Fragment() {
                         phone_number = args.phone,
                         location = args.address,
                         description = discription,
-                        pharmacy_image = uploadPicture()
+                        //pharmacy_image = imagePart
                     )
                 ).enqueue(object : Callback<RegisterResponse> {
 
@@ -120,7 +128,7 @@ class UploadRegisterFragment : Fragment() {
 
                         Log.d("Auth", "respoonse: ${response}");
                         Toast.makeText(
-                            requireContext(), response.body()?.message,
+                            requireContext(), "${response.body()?.message}",
                             Toast.LENGTH_LONG
                         ).show()
                         if(response.body()?.success == true) {
@@ -144,36 +152,16 @@ class UploadRegisterFragment : Fragment() {
 
     }
 
-    private fun uploadPicture(): File {
-        val imageFile = File(requireContext().cacheDir, "image.jpg")
-        imageFile.createNewFile()
 
-        val outputStream = FileOutputStream(imageFile)
-        bitmap?.compress(Bitmap.CompressFormat.JPEG, 100, outputStream)
-        outputStream.flush()
-        outputStream.close()
-
-        val imageRequestBody = RequestBody.create(
-            "image/*".toMediaTypeOrNull(),
-            imageFile
-        )
-
-        return imageFile
-    }
 
     private fun createAccount(): Boolean {
 
         discription = binding.description.editText?.text.toString()
 
-       if (uri == null || discription.isEmpty()){
+       if (discription.isEmpty()){
 
-           if(uri == null)
-               Toast.makeText(requireContext(), "Please select an image",
-                   Toast.LENGTH_LONG).show()
-            if (discription.isEmpty())
                 Toast.makeText(requireContext(), "Please Enter your Description",
                     Toast.LENGTH_LONG).show()
-
 
        }else return true
         return false
@@ -221,6 +209,47 @@ class UploadRegisterFragment : Fragment() {
         }
     }
 
+    fun getRealPathFromURI(context: Context, uri: Uri): String? {
+        var filePath: String? = null
+        val wholeID = DocumentsContract.getDocumentId(uri)
+        val id = wholeID.split(":")[1]
+        val column = arrayOf(MediaStore.Images.Media.DATA)
+        val sel = MediaStore.Images.Media._ID + "=?"
+        val cursor: Cursor? = context.contentResolver.query(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, column, sel, arrayOf(id), null)
+        if (cursor != null) {
+            val columnIndex = cursor.getColumnIndex(column[0])
+            if (cursor.moveToFirst()) {
+                filePath = cursor.getString(columnIndex)
+            }
+            cursor.close()
+        }
+        return filePath
+    }
+
+    fun createPartFromUri(context: Context, uri: Uri, partName: String): MultipartBody.Part {
+        val file = File(getRealPathFromURI(context, uri))
+        val requestFile = RequestBody.create("image/*".toMediaTypeOrNull(), file)
+        return MultipartBody.Part.createFormData(partName, file.name, requestFile)
+    }
+
+    fun createPartFromFile(file: File, partName: String): MultipartBody.Part {
+        val requestFile = RequestBody.create("image/*".toMediaTypeOrNull(), file)
+        return MultipartBody.Part.createFormData(partName, file.name, requestFile)
+    }
+
+    fun bitmapToFile(bitmap: Bitmap): File {
+        val file = File(requireContext().getExternalFilesDir(Environment.DIRECTORY_PICTURES),
+            "image.jpg")
+        file.createNewFile()
+        val stream = ByteArrayOutputStream()
+        bitmap.compress(Bitmap.CompressFormat.JPEG, 100, stream)
+        val byteArray = stream.toByteArray()
+        val fos = FileOutputStream(file)
+        fos.write(byteArray)
+        fos.close()
+        return file
+    }
+
     @Deprecated("Deprecated in Java")
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
@@ -228,13 +257,14 @@ class UploadRegisterFragment : Fragment() {
             if (data != null) {
                 uri = data.data!!
 
+
                 inputStream =
                     requireActivity().contentResolver.openInputStream(uri!!)!!
                 bitmap = BitmapFactory.decodeStream(inputStream)
                 binding.myImageView.setImageBitmap(bitmap)
             }
         } else if (requestCode == 3 && resultCode == Activity.RESULT_OK) {
-            val bitmap: Bitmap = data?.extras?.get("data") as Bitmap
+            bitmap = data?.extras?.get("data") as Bitmap
             binding.myImageView.setImageBitmap(bitmap)
 
         }

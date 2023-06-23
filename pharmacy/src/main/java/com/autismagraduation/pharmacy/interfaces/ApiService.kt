@@ -3,7 +3,6 @@ package com.autismagraduation.pharmacy.interfaces
 import com.autismagraduation.pharmacy.data.*
 import com.autismagraduation.pharmacy.`object`.Constants
 import retrofit2.Call
-import retrofit2.Callback
 import retrofit2.http.*
 
 interface ApiService {
